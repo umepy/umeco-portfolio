@@ -5,7 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
     "redirects":[{
       "source": "/en",
       "destination": "https://umeco.tokyo/index_en.html"
