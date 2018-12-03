@@ -6,9 +6,9 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects":[{
+    "rewrites":[{
       "source": "/en",
-      "destination": "https://umeco.tokyo/index_en.html"
+      "destination": "/index_en.html"
       }]
   }
 
