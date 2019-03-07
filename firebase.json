@@ -9,7 +9,11 @@
     "rewrites":[{
       "source": "/en",
       "destination": "/index_en.html"
-      }]
+      },{
+      "source": "/works",
+      "destination": "/works.html"
+      }
+    ]
   }
 
 }
