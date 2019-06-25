@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Projects - umeco's portfolio</title>
+    <meta name="description" content="うめこのポートフォリオサイトです">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,11 +15,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112792223-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112792223-2');
+</script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="https://umeco.tokyo">umeco's portfolio</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="https://umeco.tokyo">umeco's portfolio</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
@@ -42,22 +53,22 @@
                             <div class="container">
                                 <h2 class="text-monospace text-primary">Projects</h2>
                                 <div class="row">
-                                    <div class="col-md-4 cust_blogteaser" style="padding-bottom:20px;margin-bottom:32px;"><a href="#"><img class="img-fluid" src="assets/img/foodreplacer.png" style="height:auto;"></a>
+                                    <div class="col-md-4 cust_blogteaser" style="padding-bottom:20px;margin-bottom:32px;"><a href="#"><img class="img-fluid" style="height:auto;" src="assets/img/foodreplacer.png"></a>
                                         <h3 style="text-align:left;margin-top:20px;font-family:'Open Sans', sans-serif;font-size:18px;margin-right:0;margin-left:24px;line-height:34px;letter-spacing:0px;font-style:normal;font-weight:bold;">Food Replacer</h3>
-                                        <p class="text-secondary" style="text-align:left;font-size:14px;font-family:'Open Sans', sans-serif;line-height:22px;color:rgb(9,9,10);margin-left:24px;">レシピを見ながら料理を作る際に，あまり売られていない食材や手元にない食材が使われていることはありませんか？Food Replacerは，類似するレシピで使われている類似する食材を提示してくれるWebアプリケーションです．いつもと違う食材を使う，アレンジ料理の参考にもすることができます！WSSIT2018で発表した研究内容の実装になります（現在公開停止中）．</p><a href="#" class="h4"><i class="fa fa-arrow-circle-right" style="margin-left:23px;"></i></a></div>
+                                        <p class="text-secondary" style="text-align:left;font-size:14px;font-family:'Open Sans', sans-serif;line-height:22px;color:rgb(9,9,10);margin-left:24px;">レシピを見ながら料理を作る際に，あまり売られていない食材や手元にない食材が使われていることはありませんか？Food Replacerは，類似するレシピで使われている類似する食材を提示してくれるWebアプリケーションです．いつもと違う食材を使う，アレンジ料理の参考にもすることができます！WSSIT2018で発表した研究内容の実装になります（現在公開停止中）．</p><a class="h4" href="#"><i class="fa fa-arrow-circle-right" style="margin-left:23px;"></i></a></div>
                                     <div
-                                        class="col-md-4 cust_blogteaser" style="padding-bottom:20px;margin-bottom:32px;"><a href="#"><img class="img-fluid" src="assets/img/healthyrecipe.png" style="height:auto;"></a>
+                                        class="col-md-4 cust_blogteaser" style="padding-bottom:20px;margin-bottom:32px;"><a href="#"><img class="img-fluid" style="height:auto;" src="assets/img/healthyrecipe.png"></a>
                                         <h3 style="text-align:left;margin-top:20px;font-family:'Open Sans', sans-serif;font-size:18px;margin-right:0;margin-left:24px;line-height:34px;letter-spacing:0px;font-style:normal;font-weight:bold;">Healthy Recipe!</h3>
-                                        <p class="text-secondary" style="text-align:left;font-size:14px;font-family:'Open Sans', sans-serif;line-height:22px;color:rgb(9,9,10);margin-left:24px;">健康を意識して料理をしてみませんか？Healthy Recipe!では完全自動でインターネット上の料理レシピの栄養素量を計算し，1日に必要な栄養素のどれだけを摂取できるのかを調べることができるWebアプリケーションです。より正確な計算をするために，手作業での修正もすることができます．WSSIT2019で発表した研究内容の実装になります．</p><a href="https://umeco.co/healthy_recipe"
-                                            class="h4"><i class="fa fa-arrow-circle-right" style="margin-left:23px;"></i></a></div>
-                                <div class="col-md-4 cust_blogteaser" style="padding-bottom:20px;margin-bottom:32px;">
-                                    <div><a href="#"><img class="img-fluid d-lg-flex mx-auto d-block" src="assets/img/server.jpg" style="height: auto;width: 202px;"></a></div>
+                                        <p class="text-secondary" style="text-align:left;font-size:14px;font-family:'Open Sans', sans-serif;line-height:22px;color:rgb(9,9,10);margin-left:24px;">健康を意識して料理をしてみませんか？Healthy Recipe!では完全自動でインターネット上の料理レシピの栄養素量を計算し，1日に必要な栄養素のどれだけを摂取できるのかを調べることができるWebアプリケーションです。より正確な計算をするために，手作業での修正もすることができます．WSSIT2019で発表した研究内容の実装になります．</p><a class="h4" href="https://umeco.co/healthy_recipe"><i class="fa fa-arrow-circle-right" style="margin-left:23px;"></i></a></div>
+                                <div
+                                    class="col-md-4 cust_blogteaser" style="padding-bottom:20px;margin-bottom:32px;">
+                                    <div><a href="#"><img class="img-fluid d-lg-flex mx-auto d-block" style="height: auto;width: 202px;" src="assets/img/server.jpg"></a></div>
                                     <h3 style="text-align:left;margin-top:20px;font-family:'Open Sans', sans-serif;font-size:18px;margin-right:0;margin-left:24px;line-height:34px;letter-spacing:0px;font-style:normal;font-weight:bold;">Own Server</h3>
-                                    <p class="text-secondary" style="text-align:left;font-size:14px;font-family:'Open Sans', sans-serif;line-height:22px;color:rgb(9,9,10);margin-left:24px;">近年，クラウドサービスが流行していますが，あえて自分でサーバを買って運用しています．Webページ（https://umeco.co）や，umeco.coメールアドレスは，このサーバによって動作しています．</p><a href="https://umeco.co" class="h4"><i class="fa fa-arrow-circle-right" style="margin-left:23px;"></i></a></div>
-                            </div>
+                                    <p class="text-secondary" style="text-align:left;font-size:14px;font-family:'Open Sans', sans-serif;line-height:22px;color:rgb(9,9,10);margin-left:24px;">近年，クラウドサービスが流行していますが，あえて自分でサーバを買って運用しています．Webページ（https://umeco.co）や，umeco.coメールアドレスは，このサーバによって動作しています．</p><a class="h4" href="https://umeco.co"><i class="fa fa-arrow-circle-right" style="margin-left:23px;"></i></a></div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <div class="container">
                 <h2 class="text-monospace text-primary">Presentations</h2>
