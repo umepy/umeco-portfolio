@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +13,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className="bg"></div>
+      <main>
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center md:w-1/2">
+            <img
+              className="rounded-full  w-40 h-40 mt-24"
+              src="my_face.jpeg"
+            ></img>
+            <p className="text-4xl pt-4">梅本 晴弥</p>
+            <p className="text-xl text-gray-400 pt-1 pb-4">ML Engineer</p>
+            <p className="text-xl text-text_gray">
+              学部２年生から機械学習に興味を持ち、データマイニングや機械学習を専門的に扱う大原研究室へラボワーク生として参加。学部３年生からは理工学部高度実践生（学科初）として正式に研究室に所属し、データ分析コンペティションや研究会への参加から機械学習全般への理解を深める。学部４年生では、データ分析コンペティションでの上位入賞を果たし、代替食材に関する研究を行った。大学院では、強化学習分野において埋め込みモデルを応用させた学習手法を研究した．
+            </p>
+          </div>
+        </div>
       </main>
     </>
   );
