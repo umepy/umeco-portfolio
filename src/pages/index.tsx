@@ -19,6 +19,7 @@ export default function Home() {
             <img
               className="rounded-full  w-40 h-40 mt-24"
               src="my_face.jpeg"
+              alt="face_img"
             ></img>
             <p className="text-4xl pt-4">梅本 晴弥</p>
             <p className="text-xl text-gray-400 pt-1 pb-4">ML Engineer</p>
