@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-gray-100">
-          <p className="text-3xl text-text_gray">Biography</p>
+          <p className="text-3xl text-text_gray">Carrier</p>
         </div>
       </main>
     </>
