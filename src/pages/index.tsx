@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { useLocale } from "@/locales/local";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const { t } = useLocale();
   return (
     <>
       <Head>
@@ -21,7 +23,7 @@ export default function Home() {
               src="my_face.jpeg"
               alt="face_img"
             ></img>
-            <p className="text-4xl pt-4">梅本 晴弥</p>
+            <p className="text-4xl pt-4">{t.MY_NAME}</p>
             <p className="text-xl text-gray-400 pt-1 pb-4">ML Engineer</p>
 
             <div className="flex flex-row justify-center pb-4">
@@ -81,14 +83,39 @@ export default function Home() {
               </a>
             </div>
 
-            <p className="text-3xl text-text_gray">Biography</p>
-            <p className="text-xl text-text_gray">
-              学部２年生から機械学習に興味を持ち、データマイニングや機械学習を専門的に扱う大原研究室へラボワーク生として参加。学部３年生からは理工学部高度実践生（学科初）として正式に研究室に所属し、データ分析コンペティションや研究会への参加から機械学習全般への理解を深める。学部４年生では、データ分析コンペティションでの上位入賞を果たし、代替食材に関する研究を行った。大学院では、強化学習分野において埋め込みモデルを応用させた学習手法を研究した．
-            </p>
+            <div>
+              <p className="text-3xl text-text_gray font-bold p-2">Biography</p>
+              <p className="text-xl text-text_gray p-2 pb-10">{t.BIOGRAPHY}</p>
+            </div>
           </div>
         </div>
-        <div className="bg-gray-100">
-          <p className="text-3xl text-text_gray">Carrier</p>
+        <div className="flex flex-col items-center justify-centerp-2">
+          <div className="flex flex-col justify-center md:w-1/2">
+            <div>
+              <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
+                Skills
+              </p>
+            </div>
+            <div className="flex flex-col items-cente">
+              <p className="text-xl text-text_gray p-2">
+                {t.PROGRAMMING_LANGUAGE}
+              </p>
+              <p className="text-xl text-text_gray p-2">{t.FRAMEWORK}</p>
+              <p className="text-xl text-text_gray p-2">{t.RESEARCH}</p>
+            </div>
+            <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
+              Prizes
+            </p>
+            <p className="text-xl text-text_gray p-2 whitespace-pre-line">
+              {t.PRIZES}
+            </p>
+            <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
+              Career
+            </p>
+            <p className="text-xl text-text_gray p-2 whitespace-pre-line">
+              {t.CAREER}
+            </p>
+          </div>
         </div>
       </main>
     </>
