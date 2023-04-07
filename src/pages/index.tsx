@@ -104,7 +104,7 @@ export default function Home() {
               <p className="text-xl text-text_gray p-2">{t.RESEARCH}</p>
             </div>
             <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
-              Prizes
+              Prizes/Certifications
             </p>
             <p className="text-xl text-text_gray p-2 whitespace-pre-line">
               {t.PRIZES}
@@ -115,6 +115,11 @@ export default function Home() {
             <p className="text-xl text-text_gray p-2 whitespace-pre-line">
               {t.CAREER}
             </p>
+            <div>
+              <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
+                Others
+              </p>
+            </div>
           </div>
         </div>
       </main>
