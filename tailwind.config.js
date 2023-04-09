@@ -8,6 +8,7 @@ module.exports = {
       blue: colors.blue,
       sky: colors.sky,
       gray: colors.gray,
+      black: colors.black,
       text_gray: "#0F1111",
     },
     extend: {},
