@@ -60,8 +60,8 @@ export default function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   viewBox="0 0 24 24"
                   className="transform w-8 h-8 hover:fill-blue-500 hover:scale-125"
                 >
@@ -101,23 +101,140 @@ export default function Home() {
                 {t.PROGRAMMING_LANGUAGE}
               </p>
               <p className="text-xl text-text_gray p-2">{t.FRAMEWORK}</p>
-              <p className="text-xl text-text_gray p-2">{t.RESEARCH}</p>
+              <p className="text-xl text-text_gray p-2 pb-10">{t.RESEARCH}</p>
             </div>
             <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
               Prizes/Certifications
             </p>
-            <p className="text-xl text-text_gray p-2 whitespace-pre-line">
+            <p className="text-xl text-text_gray p-2 pb-10 whitespace-pre-line">
               {t.PRIZES}
             </p>
             <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
               Career
             </p>
-            <p className="text-xl text-text_gray p-2 whitespace-pre-line">
+            <p className="text-xl text-text_gray p-2 pb-10 whitespace-pre-line">
               {t.CAREER}
             </p>
             <div>
               <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
-                Others
+                Pubilications
+              </p>
+              <div className="flex flex-wrap">
+                <div className="sm:basis-full md:basis-1/3">
+                  <div className="p-4 m-1">
+                    <p className="text-xl pb-2">
+                      学習の安定化のために方策の埋め込みを利用する強化学習手法の検討
+                    </p>
+                    <p className="text-sm">
+                      梅本晴弥，豊田哲也，大原剛三：学習の安定化のために方策の埋め込みを利用する強化学習手法の検討，知識ベースシステム研究会(SIG-KBS)
+                      (2019).
+                    </p>
+                    <div className="flex justify-center">
+                      <a
+                        href="https://www.jstage.jst.go.jp/article/jsaikbs/118/0/118_03/_article/-char/ja/"
+                        target="_blank"
+                        className="pt-4"
+                      >
+                        <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
+                          READ MORE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:basis-full md:basis-1/3">
+                  <div className="p-4 m-1">
+                    <p className="text-xl pb-2">
+                      食材名の分散表現学習を用いた料理レシピの栄養推定手法
+                    </p>
+                    <p className="text-sm">
+                      梅本晴弥，豊田哲也，大原剛三：食材名の分散表現学習を用いた料理レシピの栄養推定手法，行動変容と社会システム
+                      vol.05 (2019).
+                    </p>
+                    <div className="flex justify-center">
+                      <a
+                        href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=194770&item_no=1&page_id=13&block_id=8"
+                        target="_blank"
+                        className="pt-4"
+                      >
+                        <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
+                          READ MORE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:basis-full md:basis-1/3">
+                  <div className="p-4 m-1">
+                    <p className="text-xl pb-2">
+                      k-NN Based Forecast of Short-Term Foreign Exchange Rates
+                    </p>
+                    <p className="text-sm">
+                      Umemoto, Haruya, Tetsuya Toyota, and Kouzou Ohara. "k-NN
+                      Based Forecast of Short-Term Foreign Exchange Rates."
+                      Pacific Rim Knowledge Acquisition Workshop. Springer,
+                      Cham, 2018.
+                    </p>
+                    <div className="flex justify-center">
+                      <a
+                        href="https://link.springer.com/chapter/10.1007/978-3-319-97289-3_11"
+                        target="_blank"
+                        className="pt-4"
+                      >
+                        <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
+                          READ MORE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:basis-full md:basis-1/3">
+                  <div className="p-4 m-1">
+                    <p className="text-xl pb-2">
+                      料理レシピの分散表現を用いた代替食材の発見手法
+                    </p>
+                    <p className="text-sm">
+                      梅本晴弥，豊田哲也，大原剛三：料理レシピの分散表現を用いた代替食材の発見手法，行動変容と社会システム
+                      vol.03 (2018).
+                    </p>
+                    <div className="flex justify-center">
+                      <a
+                        href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=185896&item_no=1&page_id=13&block_id=8"
+                        target="_blank"
+                        className="pt-4"
+                      >
+                        <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
+                          READ MORE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:basis-full md:basis-1/3">
+                  <div className="p-4 m-1">
+                    <p className="text-xl pb-2">
+                      過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測
+                    </p>
+                    <p className="text-sm">
+                      梅本晴弥，豊田哲也，大原剛三：過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測，研究報告知能システム（ICS），2017-ICS-186，pp.
+                      1-7 (2017).
+                    </p>
+                    <div className="flex justify-center">
+                      <a
+                        href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=177687&item_no=1&page_id=13&block_id=8"
+                        target="_blank"
+                        className="pt-4"
+                      >
+                        <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
+                          READ MORE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
+                Slides
               </p>
             </div>
           </div>
