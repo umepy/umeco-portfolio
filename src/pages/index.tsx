@@ -236,6 +236,70 @@ export default function Home() {
               <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
                 Slides
               </p>
+              <ul className="list-disc px-10">
+                <li>
+                  <a
+                    href="https://speakerdeck.com/umeco/cookpad-r-and-d-internship-2018-byumeco"
+                    target="_blank"
+                  >
+                    <p className="hover:text-blue-400 py-1">
+                      【Cookpad Intern】レシピの分散表現を用いたアレンジ度の算出
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://speakerdeck.com/umeco/wssit2019-shi-cai-ming-falsefen-san-biao-xian-xue-xi-woyong-italiao-li-resipifalserong-yang-tui-ding-shou-fa"
+                    target="_blank"
+                  >
+                    <p className="hover:text-blue-400 py-1">
+                      【WSSIT2019】食材名の分散表現学習を用いた料理レシピの栄養推定手法
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://speakerdeck.com/umeco/wssit2018-liao-li-resipifalsefen-san-biao-xian-woyong-itadai-ti-shi-cai-falsefa-jian-shou-fa"
+                    target="_blank"
+                  >
+                    <p className="hover:text-blue-400 py-1">
+                      【WSSIT2018】料理レシピの分散表現を用いた代替食材の発見手法
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://speakerdeck.com/umeco/jpywei-ti-retoyu-ce"
+                    target="_blank"
+                  >
+                    <p className="hover:text-blue-400 py-1">
+                      【WSSIT2017】過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://speakerdeck.com/umeco/distributed-prioritized-experience-replay"
+                    target="_blank"
+                  >
+                    <p className="hover:text-blue-400 py-1">
+                      【研究室論文紹介】Distributed prioritized experience
+                      replay
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://speakerdeck.com/umeco/using-an-artificial-financial-market-for-studying-a-cryptocurrency-market"
+                    target="_blank"
+                  >
+                    <p className="hover:text-blue-400 py-1">
+                      【研究室論文紹介】Using an Artificial Financial Market for
+                      studying a Cryptocurrency Market
+                    </p>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
