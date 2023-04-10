@@ -170,10 +170,10 @@ export default function Home() {
                       k-NN Based Forecast of Short-Term Foreign Exchange Rates
                     </p>
                     <p className="text-sm">
-                      Umemoto, Haruya, Tetsuya Toyota, and Kouzou Ohara. "k-NN
-                      Based Forecast of Short-Term Foreign Exchange Rates."
-                      Pacific Rim Knowledge Acquisition Workshop. Springer,
-                      Cham, 2018.
+                      Umemoto, Haruya, Tetsuya Toyota, and Kouzou Ohara.
+                      &ldquo;k-NN Based Forecast of Short-Term Foreign Exchange
+                      Rates.&ldquo; Pacific Rim Knowledge Acquisition Workshop.
+                      Springer, Cham, 2018.
                     </p>
                     <div className="flex justify-center">
                       <a
