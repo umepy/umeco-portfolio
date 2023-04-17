@@ -1,11 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav className="bg-sky-500 p-5">
       <div className="container flex flex-nowrap items-center justify-between mx-auto">
         <a href="https://umeco.tokyo" className="flex items-center">
-          <img src="cat_icon_128.png" alt="umeco logo" className="h-8 w-8" />
+          <Image
+            src="/cat_icon_128.png"
+            alt="umeco logo"
+            width={180}
+            height={180}
+            className="h-8 w-8"
+          />
           <span className="text-2xl font-bold ml-2 text-gray-50">
             umeco&apos;s portfolio
           </span>
@@ -18,7 +25,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/contact">
                 <p className="hover:scale-105 ">Contact</p>
               </Link>
             </li>
