@@ -9,7 +9,11 @@ module.exports = {
       sky: colors.sky,
       gray: colors.gray,
       black: colors.black,
+      white: colors.white,
       text_gray: "#0F1111",
+    },
+    fontFamily: {
+      body: ["ヒラギノ角ゴシック", "メイリオ", "Meiryo"],
     },
     extend: {},
   },
