@@ -19,7 +19,7 @@ export default function BlogPage({ blogs }: Props) {
     <>
       <div className="flex flex-wrap justify-center bg-gray-100">
         <div className="flex justify-center basis-full">
-          <p className="text-4xl py-4">ブログ記事一覧</p>
+          <p className="text-2xl py-4">ブログ記事一覧</p>
         </div>
         <div className="flex flex-wrap items-start justify-center ">
           {blogs.map((blog) => {
