@@ -125,7 +125,7 @@ export default function Home() {
                     <p className="text-xl pb-2">
                       学習の安定化のために方策の埋め込みを利用する強化学習手法の検討
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm text-gray-500">
                       梅本晴弥，豊田哲也，大原剛三：学習の安定化のために方策の埋め込みを利用する強化学習手法の検討，知識ベースシステム研究会(SIG-KBS)
                       (2019).
                     </p>
@@ -147,7 +147,7 @@ export default function Home() {
                     <p className="text-xl pb-2">
                       食材名の分散表現学習を用いた料理レシピの栄養推定手法
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm text-gray-500">
                       梅本晴弥，豊田哲也，大原剛三：食材名の分散表現学習を用いた料理レシピの栄養推定手法，行動変容と社会システム
                       vol.05 (2019).
                     </p>
@@ -169,7 +169,7 @@ export default function Home() {
                     <p className="text-xl pb-2">
                       k-NN Based Forecast of Short-Term Foreign Exchange Rates
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm text-gray-500">
                       Umemoto, Haruya, Tetsuya Toyota, and Kouzou Ohara.
                       &ldquo;k-NN Based Forecast of Short-Term Foreign Exchange
                       Rates.&ldquo; Pacific Rim Knowledge Acquisition Workshop.
@@ -193,7 +193,7 @@ export default function Home() {
                     <p className="text-xl pb-2">
                       料理レシピの分散表現を用いた代替食材の発見手法
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm text-gray-500">
                       梅本晴弥，豊田哲也，大原剛三：料理レシピの分散表現を用いた代替食材の発見手法，行動変容と社会システム
                       vol.03 (2018).
                     </p>
@@ -215,7 +215,7 @@ export default function Home() {
                     <p className="text-xl pb-2">
                       過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測
                     </p>
-                    <p className="text-sm">
+                    <p className="text-sm text-gray-500">
                       梅本晴弥，豊田哲也，大原剛三：過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測，研究報告知能システム（ICS），2017-ICS-186，pp.
                       1-7 (2017).
                     </p>
@@ -236,7 +236,7 @@ export default function Home() {
               <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
                 Slides
               </p>
-              <ul className="list-disc px-10">
+              <ul className="list-disc px-10 pb-20">
                 <li>
                   <a
                     href="https://speakerdeck.com/umeco/cookpad-r-and-d-internship-2018-byumeco"
