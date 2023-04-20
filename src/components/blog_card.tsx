@@ -17,7 +17,7 @@ export default function BlogCard(
     <>
       <Link href={blogLink}>
         <div
-          className="shadow-md bg-white rounded-md min-w-[70%] sm:min-w-[5%] p-4 m-4 hover:transform hover:scale-105 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5"
+          className="shadow-md bg-white rounded-md min-w-[80%] sm:min-w-[5%] p-4 m-4 hover:transform hover:scale-105 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5"
           key={blogName}
         >
           <Image
