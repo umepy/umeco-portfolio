@@ -9,19 +9,18 @@ tags: ["タグ1"]
 
 以前にメインPCを組んだのは7年前ぐらいで、そろそろ色々変えようかなと思っていました。一番変えたかったのはグラボなんですが、RTX4090は大体35万円するのでなかなか食指が動かず。
 そしてグラボを変えるなら絶対にCPUがボトルネックになるので変える必要があるのですが、最新のRyzen7900Xなどはソケットが丁度AM5に切り替わってしまったそうです。
-つまり、CPUを変える場合はIntel/Ryzen問わずマザーボードから更新となり、メモリはDDR5なので再度購入する必要があるという。。結局全部１から構築する必要があり、その場合は70万近くの出費。。
+つまり、CPUを変える場合はIntel/Ryzen問わずマザーボードから更新となり、メモリはDDR5なので再度購入する必要があるという。。結局全部１から構築する必要があり、その場合は70万近くの出費。。  
 今のGPUは1080で重いゲームじゃなければ問題なく動作するので、それならAM4ソケットのCPUだけ更新しておこうと思いました。
 
-[GeForce RTX 5000シリーズ、前世代から2倍以上性能向上か。Blackwellアーキテクチャの概要がリーク](https://www.nichepcgamer.com/archives/nvidia-geforce-rtx-5000-seires-blackwell-architecture-early-leak-information-april-2023.html)
-
-↑いやこんな記事出されたら5000番台に期待してしまうて...
+[GeForce RTX 5000シリーズ、前世代から2倍以上性能向上か。Blackwellアーキテクチャの概要がリーク](https://www.nichepcgamer.com/archives/nvidia-geforce-rtx-5000-seires-blackwell-architecture-early-leak-information-april-2023.html)  
+↑いやこんな記事出されたらRTX5000番台に期待してしまうて...
 
 ## 購入前スペック
 
-OS: Win10
-MB: ASRock X470 Taichi
-CPU: Ryzen 2700X
-GPU: GTX 1080
+OS: Win10  
+MB: ASRock X470 Taichi  
+CPU: Ryzen 2700X  
+GPU: GTX 1080  
 
 ## 購入
 
@@ -31,8 +30,7 @@ GPU: GTX 1080
 合わせてコスパの良いCPUクーラーとしておすすめされていた[DeepCool AK620](https://amzn.to/3zOOjU8)も購入。今までは2700XのリテールクーラーであるWraith Prismを使っていました。
 （あんまり冷えないといわれてましたが、発光も綺麗で個人的にはかなり好きでした。ありがとうAMD。）
 
-そしてグリスには定番の[熊グリス](https://amzn.to/3MQFXmX)を購入。これで準備は完璧。
-
+そしてグリスには定番の[熊グリス](https://amzn.to/3MQFXmX)を購入。これで準備は完璧。  
 だと思っていました。。。
 
 ## UEFI更新
@@ -97,19 +95,17 @@ Followup:     MachineOwner
 >温度が上がることはRYZENのCPB仕様だから問題ないんだけど、冷却機構の簡易水冷FANまたはポンプのPID制御がかみ合っておらず、強制再起動おきるCPU温度まで上がってるんじゃないかなと。それがBSODとして表面に出てきてるんじゃないかと仮説
 
 記事を作ってくれた方の仮説はたぶん正しい。普通の人は問題なくCPB使えてるのかな？デフォルト設定でこれがONなの地雷ですよね。
-
 ネット上の誰かが残してくれた備忘録、本当に助かりました。
 
 ## 解決方法
 
-RyzenのCPBを切ればOKです。具体的にはUEFIを起動して、`Advanced/CPU Configuration/AMD CBS/Core Performance Boost`をDisabledにする。
-
+RyzenのCPBを切ればOKです。具体的にはUEFIを起動して、 `Advanced/CPU Configuration/AMD CBS/Core Performance Boost` をDisabledにする。
 これでCinebenchは問題なくパス。以下がOn/Offの差です
 
 ||CPB|CPB off|
-|----|----|----|
+|---|---|---|
 |Clock|4.0GHz|3.6GHz|
 |Normal Temp.|60℃|40℃|
-|Hiest Temp.|80℃|60℃|
+|Highest Temp.|80℃|60℃|
 
 このようにCPUの温度の差は歴然でした。
