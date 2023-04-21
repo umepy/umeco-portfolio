@@ -1,7 +1,7 @@
 ---
-title: "fnmがgit bash上で正常に動作しない"
-date: "20230101"
-tags: ["タグ1"]
+title: "WSLのVSCodeでGitがうまく動作しない"
+date: "20230420"
+tags: ["備忘録"]
 ---
 # WSLのVSCodeでGitがうまく動作しない
 
