@@ -7,8 +7,7 @@ tags: ["備忘録"]
 
 ## 現象
 
-fnmをWindowsのGit Bash上で使おうとすると、fnmのパスは通るがnodeでcommand not foundとなってしまう。
-
+fnmをWindowsのGit Bash上で使おうとすると、fnmのパスは通るがnodeでcommand not foundとなってしまう。  
 bashでfnmを使うのに必要なコマンドを`.bashrc`に記載しても解決しない。
 ```bash
 eval "$(fnm env --use-on-cd)"
@@ -16,8 +15,7 @@ eval "$(fnm env --use-on-cd)"
 
 ## 原因
 
-`fnm env`で出力される**fnm_multishell**のパスが`/c/...`のようなLinux形式ではなく、`C://...`といったWindows形式なのが問題。
-
+`fnm env`で出力される**fnm_multishell**のパスが`/c/...`のようなLinux形式ではなく、`C://...`といったWindows形式なのが問題。  
 なのでcygpathでfnm_multishellをLinux形式に変換して挙げればOK。以下の内容を`.bashrc`に記載する。
 
 ```bash

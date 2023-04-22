@@ -20,5 +20,5 @@ git config --global core.autocrlf true
 git config --global core.filemode false
 ```
 
-自分はWSLのGitで上記コマンドをせっていしたらすぐに解決しました。
+自分はWSLのGitで上記コマンドをせっていしたらすぐに解決しました。  
 どうやらWindows/Linux間での改行コードの違いでGitがうまく動作していなかったようです。
