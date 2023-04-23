@@ -4,6 +4,7 @@ import remarkGfm from "remark-gfm";
 import { getAllBlogsData, getBlogData } from "@/utils/blog_render";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import { Link as ScrollLink } from "react-scroll";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -37,19 +38,50 @@ export const getStaticProps = async ({ params }: any) => {
 };
 
 export default function BlogPage({ blog }: Props) {
+  //@ts-ignore
+  const H2Link = ({ node, ...props }) => {
+    return <h2 id={node.position?.start.line.toString()}>{props.children}</h2>;
+  };
+  //@ts-ignore
+  const ankerLink = ({ node, ...props }) => {
+    return (
+      <>
+        <ScrollLink
+          to={node.position?.start.line.toString()}
+          smooth={true}
+          className="hover:text-blue-500 hover:cursor-pointer"
+        >
+          {props.children}
+        </ScrollLink>
+        <br />
+      </>
+    );
+  };
   return (
     <>
       <div className="bg-gray-100">
-        <div className="flex justify-center py-10">
-          <div className="shadow-md rounded-md bg-white p-6">
-            <article className="prose prose-h2:after:prose-hr prose-code:before:hidden prose-code:after:hidden">
+        <div className="flex flex-row space-x-0 md:space-x-6 items-start justify-center py-10 md:px-4">
+          <div className="shadow-lg rounded-md bg-white p-6 min-w-0 ">
+            <article className="prose prose-sm sm:prose prose-h2:after:prose-hr prose-code:before:hidden prose-code:after:hidden shrink">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
                 rehypePlugins={[rehypeKatex]}
+                components={{ h2: H2Link }}
               >
                 {blog.content}
               </ReactMarkdown>
             </article>
+          </div>
+          <div className="sticky top-4 shadow-lg rounded-md bg-white p-6 shrink-0 hidden md:block md:visible">
+            <div className="flex justify-center pb-4">
+              <p className="text-lg">目次</p>
+            </div>
+            <ReactMarkdown
+              allowedElements={["h2"]}
+              components={{ h2: ankerLink }}
+            >
+              {blog.content}
+            </ReactMarkdown>
           </div>
         </div>
       </div>

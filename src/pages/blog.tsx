@@ -30,10 +30,3 @@ export default function BlogPage({ blogs }: Props) {
     </>
   );
 }
-
-/*
-<div key={blog.blogName} className="bg-gray-50">
-<h1>{blog.title}</h1>
-<p>{blog.date}</p>
-</div>
-*/
