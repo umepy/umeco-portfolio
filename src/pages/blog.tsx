@@ -23,7 +23,14 @@ export default function BlogPage({ blogs }: Props) {
         </div>
         <div className="flex flex-wrap items-start justify-center ">
           {blogs.map((blog) => {
-            return BlogCard(blog.title, blog.date, blog.blogName);
+            return (
+              <BlogCard
+                title={blog.title}
+                date={blog.date}
+                blogName={blog.blogName}
+                key={blog.blogName}
+              />
+            );
           })}
         </div>
       </div>
