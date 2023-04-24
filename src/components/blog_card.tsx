@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import assert from "assert";
+import { FC } from "react";
 
-export default function BlogCard(
-  title: string,
-  date: string,
-  blogName: string
-) {
+interface Props {
+  title: string;
+  date: string;
+  blogName: string;
+}
+
+const BlogCard: FC<Props> = ({ title, date, blogName }) => {
   //check date format
   assert(date.match(/\d{8}/));
   const year = date.slice(0, 4);
@@ -15,7 +18,7 @@ export default function BlogCard(
   const blogLink = "/blogs/" + blogName;
   return (
     <>
-      <Link href={blogLink} key={blogName}>
+      <Link href={blogLink}>
         <div className="shadow-md bg-white rounded-md min-w-[80%] sm:min-w-[5%] p-4 m-4 hover:transform hover:scale-105 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
           <Image
             className="rounded-t-lg"
@@ -33,4 +36,6 @@ export default function BlogCard(
       </Link>
     </>
   );
-}
+};
+
+export default BlogCard;

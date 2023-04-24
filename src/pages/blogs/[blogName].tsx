@@ -5,6 +5,7 @@ import { getAllBlogsData, getBlogData } from "@/utils/blog_render";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { Link as ScrollLink } from "react-scroll";
+import { MyHead, HeadProps } from "@/components/myhead";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -57,8 +58,13 @@ export default function BlogPage({ blog }: Props) {
       </>
     );
   };
+  const headprops: HeadProps = {
+    title: `${blog.title}`,
+    description: `${blog.title}`,
+  };
   return (
     <>
+      <MyHead {...headprops} />
       <div className="bg-gray-100">
         <div className="flex flex-row space-x-0 md:space-x-6 items-start justify-center py-10 md:px-4">
           <div className="shadow-lg rounded-md bg-white p-6 min-w-0 ">
