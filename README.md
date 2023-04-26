@@ -18,5 +18,5 @@ npm run dev
 
 ## Future tasks
 
-[] customize prose of Tailwindcss's typography
-[] add description of a blog page as graymatter
+- [] customize prose of Tailwindcss's typography
+- [] add description of a blog page as graymatter
