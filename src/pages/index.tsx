@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { useLocale } from "@/locales/local";
 import { MyHead, HeadProps } from "@/components/myhead";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +18,13 @@ export default function Home() {
       <main>
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center md:w-1/2">
-            <img
-              className="rounded-full  w-40 h-40 mt-24"
-              src="my_face.jpeg"
+            <Image
+              className="rounded-full w-40 h-40 mt-24"
+              width={200}
+              height={200}
+              src="/my_face.jpeg"
               alt="face_img"
-            ></img>
+            ></Image>
             <p className="text-4xl pt-4">{t.MY_NAME}</p>
             <p className="text-xl text-gray-400 pt-1 pb-4">ML Engineer</p>
 
