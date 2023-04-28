@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { useLocale } from "@/locales/local";
 import { MyHead, HeadProps } from "@/components/myhead";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +18,13 @@ export default function Home() {
       <main>
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center md:w-1/2">
-            <img
-              className="rounded-full  w-40 h-40 mt-24"
-              src="my_face.jpeg"
+            <Image
+              className="rounded-full w-40 h-40 mt-24"
+              width={200}
+              height={200}
+              src="/my_face.jpeg"
               alt="face_img"
-            ></img>
+            ></Image>
             <p className="text-4xl pt-4">{t.MY_NAME}</p>
             <p className="text-xl text-gray-400 pt-1 pb-4">ML Engineer</p>
 
@@ -232,18 +235,29 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
               <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
                 Slides
               </p>
               <ul className="list-disc px-10 pb-20">
                 <li>
                   <a
+                    href="https://www.slideshare.net/ArithmerInc/transformer-248613529"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【勉強会資料】全力解説！Transformer
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://speakerdeck.com/umeco/cookpad-r-and-d-internship-2018-byumeco"
                     target="_blank"
                   >
-                    <p className="hover:text-blue-400 py-1">
+                    <span className="hover:text-blue-400 py-1">
                       【Cookpad Intern】レシピの分散表現を用いたアレンジ度の算出
-                    </p>
+                    </span>
                   </a>
                 </li>
                 <li>
@@ -251,9 +265,9 @@ export default function Home() {
                     href="https://speakerdeck.com/umeco/wssit2019-shi-cai-ming-falsefen-san-biao-xian-xue-xi-woyong-italiao-li-resipifalserong-yang-tui-ding-shou-fa"
                     target="_blank"
                   >
-                    <p className="hover:text-blue-400 py-1">
+                    <span className="hover:text-blue-400 py-1">
                       【WSSIT2019】食材名の分散表現学習を用いた料理レシピの栄養推定手法
-                    </p>
+                    </span>
                   </a>
                 </li>
                 <li>
@@ -261,9 +275,9 @@ export default function Home() {
                     href="https://speakerdeck.com/umeco/wssit2018-liao-li-resipifalsefen-san-biao-xian-woyong-itadai-ti-shi-cai-falsefa-jian-shou-fa"
                     target="_blank"
                   >
-                    <p className="hover:text-blue-400 py-1">
+                    <span className="hover:text-blue-400 py-1">
                       【WSSIT2018】料理レシピの分散表現を用いた代替食材の発見手法
-                    </p>
+                    </span>
                   </a>
                 </li>
                 <li>
@@ -271,9 +285,9 @@ export default function Home() {
                     href="https://speakerdeck.com/umeco/jpywei-ti-retoyu-ce"
                     target="_blank"
                   >
-                    <p className="hover:text-blue-400 py-1">
+                    <span className="hover:text-blue-400 py-1">
                       【WSSIT2017】過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測
-                    </p>
+                    </span>
                   </a>
                 </li>
                 <li>
@@ -281,10 +295,10 @@ export default function Home() {
                     href="https://speakerdeck.com/umeco/distributed-prioritized-experience-replay"
                     target="_blank"
                   >
-                    <p className="hover:text-blue-400 py-1">
+                    <span className="hover:text-blue-400 py-1">
                       【研究室論文紹介】Distributed prioritized experience
                       replay
-                    </p>
+                    </span>
                   </a>
                 </li>
                 <li>
@@ -292,10 +306,10 @@ export default function Home() {
                     href="https://speakerdeck.com/umeco/using-an-artificial-financial-market-for-studying-a-cryptocurrency-market"
                     target="_blank"
                   >
-                    <p className="hover:text-blue-400 py-1">
+                    <span className="hover:text-blue-400 py-1">
                       【研究室論文紹介】Using an Artificial Financial Market for
                       studying a Cryptocurrency Market
-                    </p>
+                    </span>
                   </a>
                 </li>
               </ul>
