@@ -18,6 +18,7 @@ npm run dev
 
 ## Future tasks
 
-- [] customize prose of Tailwindcss's typography
-- [] add description of a blog page as graymatter
-- [] implement i18n to markdown blogs
+- [ ] customize prose of Tailwindcss's typography
+- [ ] add description of a blog page as graymatter
+- [ ] implement i18n to markdown blogs
+- [ ] add share button to each blog page
