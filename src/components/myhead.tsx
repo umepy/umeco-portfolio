@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { NextSeo, DefaultSeo } from "next-seo";
 
 export interface HeadProps {
   title: string;
@@ -12,47 +13,39 @@ export interface HeadProps {
   og_site_name?: string;
 }
 
-export function MyHead(props: HeadProps) {
+export function DefaultHead() {
   return (
-    <Head>
-      <title>{props.title}</title>
-      <meta name="description" content={props.description} />
-      <meta
-        property="og:title"
-        content={props.og_titles ? props.og_titles : props.title}
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+      </Head>
+      <DefaultSeo
+        defaultTitle="umeco's portfolio"
+        description="AIやIT関連の話題を発信をしているポートフォリオサイトです。"
+        openGraph={{
+          type: "website",
+          title: "umeco's portfolio",
+          description:
+            "AIやIT関連の話題を発信をしているポートフォリオサイトです。",
+          url: "https://umeco.tokyo",
+          site_name: "umeco's portfolio",
+          images: [
+            {
+              url: "https://umeco.tokyo/cat_icon_128.png",
+              width: 128,
+              height: 128,
+              alt: "umeco's portfolio image alt",
+              type: "image/png",
+            },
+          ],
+        }}
+        twitter={{
+          site: "@mumeco_ml",
+          cardType: "summary_large_image",
+        }}
       />
-      <meta
-        property="og:description"
-        content={
-          props.og_description ? props.og_description : props.description
-        }
-      />
-      <meta
-        property="og:type"
-        content={props.og_type ? props.og_type : "website"}
-      />
-      <meta
-        property="og:url"
-        content={props.og_url ? props.og_url : "https://umeco.tokyo"}
-      />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content={props.og_titles ? props.og_titles : props.title}
-      />
-      <meta
-        name="twitter:description"
-        content={
-          props.og_description ? props.og_description : props.description
-        }
-      />
-      <meta
-        name="twitter:image"
-        content={props.og_image ? props.og_image : ""}
-      />
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charSet="utf-8" />
-    </Head>
+    </>
   );
 }

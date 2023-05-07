@@ -1,20 +1,15 @@
 import { Inter } from "next/font/google";
 import { useLocale } from "@/locales/local";
-import { MyHead, HeadProps } from "@/components/myhead";
+import { DefaultHead } from "@/components/myhead";
 import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { t } = useLocale();
-  const headprops: HeadProps = {
-    title: "umeco's portfolio",
-    description:
-      "umecoのポートフォリオサイトです。最近のアウトプットやブログを公開しています。",
-  };
   return (
     <>
-      <MyHead {...headprops} />
+      <DefaultHead />
       <main>
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center md:w-1/2">
