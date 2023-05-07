@@ -1,6 +1,6 @@
 ---
 title: "fnmがWindowsのgit bash上でcommand not foundとなる解決法"
-date: "20230421"
+date: "2023-04-21T09:00:00+09:00"
 tags: ["備忘録"]
 ---
 # fnmがWindowsのgit bash上でcommand not foundとなる解決法

@@ -1,6 +1,6 @@
 ---
 title: "WSLのVSCodeでGitを使うと全てのファイルがmodifiedになる"
-date: "20230420"
+date: "2023-04-20T09:00:00+09:00"
 tags: ["備忘録"]
 ---
 # WSLのVSCodeでGitを使うと全てのファイルがmodifiedになる
