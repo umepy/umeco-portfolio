@@ -5,7 +5,7 @@ import { getAllBlogsData, getBlogData } from "@/utils/blog_render";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { Link as ScrollLink } from "react-scroll";
-import { MyHead, HeadProps } from "@/components/myhead";
+import { NextSeo, ArticleJsonLd } from "next-seo";
 import Link from "next/link";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
@@ -29,7 +29,7 @@ export const getStaticProps = async ({ params }: any) => {
   const blog = getBlogData(params.blogName, [
     "title",
     "date",
-    "slug",
+    "blogName",
     "content",
   ]);
   return {
@@ -41,10 +41,13 @@ export const getStaticProps = async ({ params }: any) => {
 
 export default function BlogPage({ blog }: Props) {
   //@ts-ignore
+  // table of contents
   const H2Link = ({ node, ...props }) => {
     return <h2 id={node.position?.start.line.toString()}>{props.children}</h2>;
   };
+
   //@ts-ignore
+  // do smooth scroll when clicking the table of contents
   const ankerLink = ({ node, ...props }) => {
     return (
       <>
@@ -59,13 +62,27 @@ export default function BlogPage({ blog }: Props) {
       </>
     );
   };
-  const headprops: HeadProps = {
-    title: `${blog.title}`,
-    description: `${blog.title}`,
-  };
+
   return (
     <>
-      <MyHead {...headprops} />
+      <NextSeo
+        title={blog.title}
+        description={blog.title}
+        openGraph={{
+          title: blog.title,
+          description: blog.title,
+          url: blog.blogName,
+        }}
+      />
+      <ArticleJsonLd
+        type="BlogPosting"
+        url={blog.blogName}
+        title={blog.title}
+        description={blog.title}
+        images={["https://umeco.tokyo/cat_icon_128.png"]}
+        datePublished={new Date(blog.date).toISOString()}
+        authorName="umeco"
+      />
       <div className="bg-gray-100">
         <div className="flex flex-row space-x-0 md:space-x-6 items-start justify-center py-10 md:px-4">
           <div className="shadow-lg rounded-md bg-white p-6 min-w-0 ">

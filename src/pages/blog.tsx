@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from "next";
 import { getAllBlogsData } from "@/utils/blog_render";
 import BlogCard from "@/components/blog_card";
-import { MyHead, HeadProps } from "@/components/myhead";
+import { NextSeo } from "next-seo";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -15,13 +15,12 @@ export const getStaticProps = async () => {
 };
 
 export default function BlogPage({ blogs }: Props) {
-  const headprops: HeadProps = {
-    title: "ブログ記事一覧 | umeco's portfolio",
-    description: "umecoのブログ記事一覧ページ",
-  };
   return (
     <>
-      <MyHead {...headprops} />
+      <NextSeo
+        title="ブログ記事一覧 | umeco's portfolio"
+        description="umecoのブログ記事一覧ページ"
+      />
       <div className="flex flex-wrap justify-center bg-gray-100">
         <div className="flex justify-center basis-full">
           <p className="text-2xl py-4">ブログ記事一覧</p>
