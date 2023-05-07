@@ -1,15 +1,14 @@
 ---
-title: "WSLのVSCodeでGitがうまく動作しない"
+title: "WSLのVSCodeでGitを使うと全てのファイルがmodifiedになる"
 date: "20230420"
 tags: ["備忘録"]
 ---
-# WSLのVSCodeでGitがうまく動作しない
-
+# WSLのVSCodeでGitを使うと全てのファイルがmodifiedになる
 ## 概要
 
 WSLでGitを使おうとすると何故かすべてのファイルがmodifiedになってしまい、全く使い物にならなかった。
 
-## 結論
+## 解決方法
 
 ### GitのCRLFの設定かファイルパーミッションの設定を変更する
 
