@@ -10,11 +10,14 @@ interface Props {
 }
 
 const BlogCard: FC<Props> = ({ title, date, blogName }) => {
-  //check date format
-  assert(date.match(/\d{8}/));
-  const year = date.slice(0, 4);
-  const month = Number(date.slice(4, 6));
-  const day = Number(date.slice(6, 8));
+  assert(
+    !isNaN(new Date(date).getTime()),
+    "Error occur when parsing the date of blogs, please check the blog metadata."
+  );
+  const dateObj = new Date(date);
+  const year = dateObj.getUTCFullYear();
+  const month = dateObj.getUTCMonth() + 1;
+  const day = dateObj.getUTCDate();
   const blogLink = "/blogs/" + blogName;
   return (
     <>
