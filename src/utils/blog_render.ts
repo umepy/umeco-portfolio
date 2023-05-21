@@ -18,6 +18,7 @@ export interface blogData {
   content: string;
   blogName: string;
   tags: string[];
+  header_image: string;
 }
 
 // read blog file(.md) and return the data
@@ -32,16 +33,21 @@ export const getBlogData = (blogName: string, fields: string[] = []) => {
     content: "",
     blogName: "",
     tags: [],
+    header_image: "",
   };
 
   fields.forEach((field) => {
     if (field === "blogName") {
       items[field] = blogName;
-    }
-    if (field === "content") {
+    } else if (field === "content") {
       items[field] = content;
     }
-    if (field === "title" || field === "date" || field === "tags") {
+    if (
+      field === "title" ||
+      field === "date" ||
+      field === "tags" ||
+      field === "header_image"
+    ) {
       items[field] = data[field];
     }
   });

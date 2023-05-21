@@ -2,6 +2,7 @@
 title: "CPUを2700Xから5900Xに変えてハマった話"
 date: "2023-04-19T09:00:00+09:00"
 tags: ["日記"]
+header_image: "/blog/pc_girl.png"
 ---
 # CPUを2700Xから5900Xに変えてハマった話
 
