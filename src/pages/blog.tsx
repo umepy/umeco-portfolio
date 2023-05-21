@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticProps = async () => {
-  const blogs = getAllBlogsData(["title", "date", "blogName"]);
+  const blogs = getAllBlogsData(["title", "date", "blogName", "header_image"]);
   return {
     props: {
       blogs,
@@ -33,6 +33,7 @@ export default function BlogPage({ blogs }: Props) {
                 date={blog.date}
                 blogName={blog.blogName}
                 key={blog.blogName}
+                header_image={blog.header_image}
               />
             );
           })}
