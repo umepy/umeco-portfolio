@@ -22,7 +22,7 @@ const BlogCard: FC<Props> = ({ title, date, blogName, header_image }) => {
   const blogLink = "/blogs/" + blogName;
   assert(header_image !== undefined, "header_image is undefined");
   const headerImage =
-    header_image === "none" ? "/blog/pc_meadow.png" : header_image;
+    header_image === "" ? "/blog/pc_meadow.png" : header_image;
   return (
     <>
       <Link href={blogLink}>
