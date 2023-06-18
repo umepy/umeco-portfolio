@@ -1,7 +1,8 @@
 # Umeco's portfolio
 
 This is the source code of my web portfolio page.
-### 👉 watch [umeco's portfolio!](https://umeco.tokyo)
+
+## 👉 watch [umeco's portfolio!](https://umeco.tokyo)
 
 ## environment
 
@@ -12,14 +13,14 @@ This is the source code of my web portfolio page.
 
 ## How to run
 
-```
+```bash
 npm run dev
 ```
 
 ## Future tasks
 
-- [ ] customize prose of Tailwindcss's typography
-- [ ] add description of a blog page as graymatter
-- [ ] implement i18n to markdown blogs
-- [ ] add share button to each blog page
-- [ ] add image import system [check this info](https://kenzoblog.vercel.app/posts/nextjs-blog-asset)
+* [ ] customize prose of Tailwindcss's typography
+* [ ] add description of a blog page as graymatter
+* [ ] implement i18n to markdown blogs
+* [ ] add share button to each blog page
+* [ ] add image import system [check this info](https://kenzoblog.vercel.app/posts/nextjs-blog-asset)
