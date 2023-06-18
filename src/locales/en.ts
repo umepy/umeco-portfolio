@@ -1,31 +1,29 @@
 const en = {
   MY_NAME: "HARUYA UMEMOTO",
   BIOGRAPHY:
-    "大学/大学院では情報学を専攻し、機械学習や深層学習を用いた研究を行った。\
-    研究分野としては強化学習と自然言語処理(NLP)が専門で、最近は画像分野での研究に対する理解も深めている。\
-    大学院卒業後はAIベンチャーに入社し、NLPを中心として大規模言語モデルや対話システム等の研究開発を担当した。\
-    現職では自身の知識を活かしたAIソリューションの提供を中心に活動しており、その他にAIチームの立ち上げやプロダクト開発にも力を入れている。\
-    ML領域だけではなくIT全般に対して興味があり、フロントエンドやバックエンド、クラウド等における技術も持ち合わせている。",
+    "Haruya Umemoto studied computer science at university/graduate school and conducted research using machine learning and deep learning. \
+    His research interests include reinforcement learning and natural language processing (NLP), and he has recently developed an understanding of research in the field of imaging. \
+    After graduating, he joined an AI venture, where he was in charge of research and development of large-scale language models, dialogue systems, etc., with a focus on NLP.\
+    In his current position, he focuses on providing AI solutions using his own knowledge, and is also involved in setting up other AI teams and product development.\
+    He is interested not only in the ML area but also in IT in general, and has skills in front-end, back-end and cloud computing.",
   PROGRAMMING_LANGUAGE:
-    "プログラミング言語: Python, Rust, Go, C++, Java, JavaScript, TypeScript",
-  FRAMEWORK:
-    "フレームワーク: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js",
-  RESEARCH:
-    "専門分野: 機械学習, 深層学習, 強化学習, 自然言語処理, データ分析, 対話システム",
+    "Language: Python, Rust, Go, C++, Java, JavaScript, TypeScript",
+  FRAMEWORK: "Framework: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js",
+  RESEARCH: "Specialization: ML, DL, RL, NLP, Data analysis, Dialogue system",
   PRIZES:
     "2022 - GCP Professional Data Engineer\n\
-    2020 - 人工知能学会研究会優秀賞\n\
-    2020 - 薦田先端学術賞\n\
-    2020 - 学業成績最優秀賞\n\
-    2020 - 修士論文発表優秀賞\n\
-    2017 - データ解析&シミュレーションハッカソン2017準優勝(SIG-DOCMAS)\n\
-    2015 - 青山学院大学賞(Hack U 2015 at 青山学院大学)",
+    2020 - JSAI Outstanding Paper Award \n\
+    2020 - Komoda Advanced Science Academic Award \n\
+    2020 - The Highest Grade Point Award \n\
+    2020 - Outstanding Presentation of Master Thesis Award \n\
+    2017 - Data analysis&Simulation Hackason 2017 Second prise (SIG-DOCMAS) \n\
+    2015 - Award of Aoyama gakuin University (Hack U 2015 at Aoyama gakuin University)",
   CAREER:
-    "2021/10, MLエンジニア, TC3 株式会社\n\
-    2020/04, MLエンジニア, Arithmer 株式会社\n\
-    2020/03, 青山学院大学大学院卒業 修士（工学）\n\
-    2018/08, インターンシップ, Cookpad株式会社 \n\
-    2018/03, 青山学院大学卒業 学士（工学）",
+    "2021/10, ML Engineer, TC3 \n\
+    2020/04, ML Engineer, Arithmer \n\
+    2020/03, Graduated shcool of Aoyama gakuin university, Master of engineering \n\
+    2018/08, Internship, Cookpad \n\
+    2018/03, Aoyama gakuin University, Bachelor of engineering ",
 };
 
 export default en;
