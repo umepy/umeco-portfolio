@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { useRouter } from "next/router";
+import { useLocale } from "@/locales/local";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const router = useRouter();
+  const t = useLocale();
   return (
     <>
       <nav className="bg-sky-500 p-5">
@@ -131,7 +133,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/" locale={t.locale == "en" ? "ja" : "en"}>
                   <p className="hover:scale-105 ">Language</p>
                 </Link>
               </li>
