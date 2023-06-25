@@ -31,6 +31,7 @@ export const getStaticProps = async ({ params }: any) => {
     "date",
     "blogName",
     "content",
+    "header_image",
   ]);
   return {
     props: {
