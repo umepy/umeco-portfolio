@@ -78,6 +78,7 @@ export default function BlogPage({ blog }: Props) {
           title: blog.title,
           description: blog_description,
           url: blog.blogName,
+          images: [{ url: `https://umeco.tokyo${blog.header_image}` }],
         }}
         twitter={{
           site: "@mumeco_ml",
