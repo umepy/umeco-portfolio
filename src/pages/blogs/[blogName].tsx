@@ -31,6 +31,7 @@ export const getStaticProps = async ({ params }: any) => {
     "date",
     "blogName",
     "content",
+    "header_image",
   ]);
   return {
     props: {
@@ -45,6 +46,16 @@ export default function BlogPage({ blog }: Props) {
   const H2Link = ({ node, ...props }) => {
     return <h2 id={node.position?.start.line.toString()}>{props.children}</h2>;
   };
+
+  // generate description
+  const blog_description = blog.content
+    .replace(/#.*\n/, "")
+    .replace(/\[.*\](.*)/g, "")
+    .replace(/#|-|`|<[^>]*>/g, "")
+    .replace(/[\n ]{2,}/g, "\n")
+    .slice(0, 160);
+
+  console.log(blog_description);
 
   //@ts-ignore
   // do smooth scroll when clicking the table of contents
@@ -70,16 +81,21 @@ export default function BlogPage({ blog }: Props) {
         description={blog.title}
         openGraph={{
           title: blog.title,
-          description: blog.title,
+          description: blog_description,
           url: blog.blogName,
+          images: [{ url: `https://umeco.tokyo${blog.header_image}` }],
+        }}
+        twitter={{
+          site: "@mumeco_ml",
+          cardType: "summary",
         }}
       />
       <ArticleJsonLd
         type="BlogPosting"
         url={blog.blogName}
         title={blog.title}
-        description={blog.title}
-        images={["https://umeco.tokyo/cat_icon_128.png"]}
+        description={blog_description}
+        images={[`https://umeco.tokyo${blog.header_image}`]}
         datePublished={new Date(blog.date).toISOString()}
         authorName="umeco"
       />
@@ -101,7 +117,7 @@ export default function BlogPage({ blog }: Props) {
               </ReactMarkdown>
             </article>
           </div>
-          <div className="sticky top-4 shadow-lg rounded-md bg-white p-6 shrink-0 hidden md:block md:visible w-40">
+          <div className="sticky top-4 shadow-lg rounded-md bg-white p-6 shrink-0 hidden lg:block lg:visible w-56">
             <div className="flex justify-center">
               <p className="text-lg">目次</p>
             </div>

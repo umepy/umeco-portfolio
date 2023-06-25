@@ -20,7 +20,7 @@ npm run dev
 ## Future tasks
 
 * [ ] customize prose of Tailwindcss's typography
-* [ ] add description of a blog page as graymatter
+* [x] add description of a blog page as graymatter
 * [ ] implement i18n to markdown blogs
 * [ ] add share button to each blog page
 * [ ] add image import system [check this info](https://kenzoblog.vercel.app/posts/nextjs-blog-asset)
