@@ -50,8 +50,9 @@ export default function BlogPage({ blog }: Props) {
   // generate description
   const blog_description = blog.content
     .replace(/#.*\n/, "")
+    .replace(/\n\n/g, "")
     .replace(/#|`|<[^>]*>/g, "")
-    .slice(0, 100);
+    .slice(0, 155);
 
   //@ts-ignore
   // do smooth scroll when clicking the table of contents
