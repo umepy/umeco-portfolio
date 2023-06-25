@@ -46,6 +46,12 @@ export default function BlogPage({ blog }: Props) {
     return <h2 id={node.position?.start.line.toString()}>{props.children}</h2>;
   };
 
+  // generate description
+  const blog_description = blog.content
+    .replace(/#.*\n/, "")
+    .replace(/#|`|<[^>]*>/g, "")
+    .slice(0, 100);
+
   //@ts-ignore
   // do smooth scroll when clicking the table of contents
   const ankerLink = ({ node, ...props }) => {
@@ -70,16 +76,20 @@ export default function BlogPage({ blog }: Props) {
         description={blog.title}
         openGraph={{
           title: blog.title,
-          description: blog.title,
+          description: blog_description,
           url: blog.blogName,
+        }}
+        twitter={{
+          site: "@mumeco_ml",
+          cardType: "summary",
         }}
       />
       <ArticleJsonLd
         type="BlogPosting"
         url={blog.blogName}
         title={blog.title}
-        description={blog.title}
-        images={["https://umeco.tokyo/cat_icon_128.png"]}
+        description={blog_description}
+        images={[`https://umeco.tokyo${blog.header_image}`]}
         datePublished={new Date(blog.date).toISOString()}
         authorName="umeco"
       />
