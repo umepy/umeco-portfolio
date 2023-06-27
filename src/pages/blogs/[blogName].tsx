@@ -55,8 +55,6 @@ export default function BlogPage({ blog }: Props) {
     .replace(/[\n ]{2,}/g, "\n")
     .slice(0, 160);
 
-  console.log(blog_description);
-
   //@ts-ignore
   // do smooth scroll when clicking the table of contents
   const ankerLink = ({ node, ...props }) => {
