@@ -7,6 +7,7 @@ import rehypeKatex from "rehype-katex";
 import { Link as ScrollLink } from "react-scroll";
 import { NextSeo, ArticleJsonLd } from "next-seo";
 import Link from "next/link";
+import CodeBlock from "@/components/codeblock";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -44,7 +45,17 @@ export default function BlogPage({ blog }: Props) {
   //@ts-ignore
   // table of contents
   const H2Link = ({ node, ...props }) => {
-    return <h2 id={node.position?.start.line.toString()}>{props.children}</h2>;
+    return (
+      <div className="w-full flex flex-col">
+        <h2
+          id={node.position?.start.line.toString()}
+          style={{ marginBottom: 0 }}
+        >
+          {props.children}
+        </h2>
+        <span className="w-full border-t-2 border-sky-600"></span>
+      </div>
+    );
   };
 
   // generate description
@@ -109,7 +120,7 @@ export default function BlogPage({ blog }: Props) {
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
                 rehypePlugins={[rehypeKatex]}
-                components={{ h2: H2Link }}
+                components={{ h2: H2Link, code: CodeBlock }}
               >
                 {blog.content}
               </ReactMarkdown>
