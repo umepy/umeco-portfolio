@@ -31,7 +31,7 @@ mosaicMLが6/22に発表した約300億パラメータのLLMです。ベース�
 
 MPT-30Bのbaseモデルを動作させます。
 
-```Python
+```python
 import torch
 from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer
 
