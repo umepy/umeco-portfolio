@@ -15,7 +15,25 @@ module.exports = {
     fontFamily: {
       body: ["ヒラギノ角ゴシック", "メイリオ", "Meiryo"],
     },
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            code: { fontWeight: 400 },
+            pre: null,
+            "pre code": {
+              backgroundColor: null,
+              borderWidth: null,
+              borderRadius: null,
+              padding: null,
+              color: null,
+              fontSize: "100px",
+              lineHeight: "inherit",
+            },
+          },
+        },
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
