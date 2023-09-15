@@ -2,7 +2,7 @@
 title: "MPT-30Bの4bit量子版をローカルRTX4090で動作させる"
 date: "2023-06-23T21:00:00+09:00"
 tags: ["備忘録"]
-header_image: "/blog/mpt30b.jpg"
+header_image: "/blog_header/mpt30b.jpg"
 ---
 
 # MPT-30Bの4bit量子版をローカルRTX4090で動作させる

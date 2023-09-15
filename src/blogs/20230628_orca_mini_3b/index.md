@@ -2,7 +2,7 @@
 title: "Orca mini 3Bに指示を出して最新小規模LLMの実力を調べる"
 date: "2023-06-27T21:00:00+09:00"
 tags: ["備忘録", "AI"]
-header_image: "/blog/orca.jpg"
+header_image: "/blog_header/orca.jpg"
 ---
 
 # Orca mini 3Bに指示を出して最新小規模LLMの実力を調べる
