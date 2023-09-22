@@ -1,6 +1,6 @@
 ---
 title: "【論文】Llama2 から学ぶ最新大規模言語モデル"
-date: "2023-07-14T12:00:00+09:00"
+date: "2023-09-22T22:00:00+09:00"
 tags: ["備忘録", "AI", "NLP"]
 header_image: "/blog_header/llama.png"
 ---
