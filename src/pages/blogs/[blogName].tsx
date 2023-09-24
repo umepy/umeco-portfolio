@@ -8,6 +8,14 @@ import { Link as ScrollLink } from "react-scroll";
 import { NextSeo, ArticleJsonLd } from "next-seo";
 import Link from "next/link";
 import CodeBlock from "@/components/codeblock";
+import {
+  TwitterIcon,
+  TwitterShareButton,
+  HatenaIcon,
+  HatenaShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+} from "react-share";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -55,6 +63,37 @@ export default function BlogPage({ blog }: Props) {
         </h2>
         <span className="w-full border-t-2 border-sky-600"></span>
       </div>
+    );
+  };
+
+  //@ts-ignore
+  const TitleWithShareButton = ({ ...props }) => {
+    return (
+      <>
+        <h1 className="text-2xl font-bold">{props.children}</h1>
+        <TwitterShareButton
+          url={"https://umeco.tokyo/blogs/" + blog.blogName}
+          title={blog.title}
+          related={["mumeco_ml"]}
+          className="mx-1"
+        >
+          <TwitterIcon size={40} round />
+        </TwitterShareButton>
+        <HatenaShareButton
+          url={"https://umeco.tokyo/blogs/" + blog.blogName}
+          title={blog.title}
+          className="mx-1"
+        >
+          <HatenaIcon size={40} round />
+        </HatenaShareButton>
+        <LinkedinShareButton
+          url={"https://umeco.tokyo/blogs/" + blog.blogName}
+          title={blog.title}
+          className="mx-1"
+        >
+          <LinkedinIcon size={40} round />
+        </LinkedinShareButton>
+      </>
     );
   };
 
@@ -120,7 +159,11 @@ export default function BlogPage({ blog }: Props) {
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
                 rehypePlugins={[rehypeKatex]}
-                components={{ h2: H2Link, code: CodeBlock }}
+                components={{
+                  h2: H2Link,
+                  code: CodeBlock,
+                  h1: TitleWithShareButton,
+                }}
               >
                 {blog.content}
               </ReactMarkdown>

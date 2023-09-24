@@ -2,7 +2,7 @@
 title: "umeco's portfolioをアップデートしました"
 date: "2023-04-18T09:00:00+09:00"
 tags: ["プログラミング"]
-header_image: "/blog/chibi_girls.png"
+header_image: "/blog_header/chibi_girls.png"
 ---
 
 # umeco's portfolioをアップデートしました

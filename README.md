@@ -2,14 +2,14 @@
 
 This is the source code of my web portfolio page.
 
-## 👉 watch [umeco's portfolio!](https://umeco.tokyo)
+## 👉 check [umeco's portfolio!](https://umeco.tokyo)
 
 ## environment
 
-* Framework: NextJS
-* UI framework: Tailwindcss
-* Language: typescript
-* Deployment: Vercel
+- Framework: NextJS
+- UI framework: Tailwindcss
+- Language: typescript
+- Deployment: Vercel
 
 ## How to run
 
@@ -19,8 +19,8 @@ npm run dev
 
 ## Future tasks
 
-* [ ] customize prose of Tailwindcss's typography
-* [x] add description of a blog page as graymatter
-* [ ] implement i18n to markdown blogs
-* [ ] add share button to each blog page
-* [ ] add image import system [check this info](https://kenzoblog.vercel.app/posts/nextjs-blog-asset)
+- [x] customize prose of Tailwindcss's typography
+- [x] add description of a blog page as graymatter
+- [ ] implement i18n to markdown blogs
+- [x] add share button to each blog page
+- [x] add image import system [check this info](https://kenzoblog.vercel.app/posts/nextjs-blog-asset)
