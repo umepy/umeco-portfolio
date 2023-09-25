@@ -71,28 +71,44 @@ export default function BlogPage({ blog }: Props) {
     return (
       <>
         <h1 className="text-2xl font-bold">{props.children}</h1>
-        <TwitterShareButton
-          url={"https://umeco.tokyo/blogs/" + blog.blogName}
-          title={blog.title}
-          related={["mumeco_ml"]}
-          className="mx-1"
-        >
-          <TwitterIcon size={40} round />
-        </TwitterShareButton>
-        <HatenaShareButton
-          url={"https://umeco.tokyo/blogs/" + blog.blogName}
-          title={blog.title}
-          className="mx-1"
-        >
-          <HatenaIcon size={40} round />
-        </HatenaShareButton>
-        <LinkedinShareButton
-          url={"https://umeco.tokyo/blogs/" + blog.blogName}
-          title={blog.title}
-          className="mx-1"
-        >
-          <LinkedinIcon size={40} round />
-        </LinkedinShareButton>
+        <div className="flex flex-row justify-start">
+          <TwitterShareButton
+            url={"https://umeco.tokyo/blogs/" + blog.blogName}
+            title={blog.title}
+            related={["mumeco_ml"]}
+            className="mx-1"
+          >
+            <TwitterIcon size={40} round />
+          </TwitterShareButton>
+          <HatenaShareButton
+            url={"https://umeco.tokyo/blogs/" + blog.blogName}
+            title={blog.title}
+            className="mx-1"
+          >
+            <HatenaIcon size={40} round />
+          </HatenaShareButton>
+          <a
+            href="#"
+            className="mx-1"
+            onClick={() => {
+              const sw = screen.width / 2;
+              const sh = screen.height / 2;
+              window.open(
+                "https://www.linkedin.com/shareArticle/?url=https://umeco.tokyo/blogs/" +
+                  blog.blogName +
+                  "&title=" +
+                  blog.title +
+                  "&summary=" +
+                  blog_description +
+                  "&source=umeco.tokyo",
+                "",
+                "width=500,height=500,scrollbars=yes,left=" + sw + ",top=" + sh
+              );
+            }}
+          >
+            <LinkedinIcon size={40} round />
+          </a>
+        </div>
       </>
     );
   };
