@@ -1,11 +1,11 @@
 ---
-title: "【論文】Llama2が100kトークン入力可能に!? 高コスパ手法 LongLoRA"
+title: "【論文】Llama2が100kトークン入力可能に!? 高コスパ手法 LongLoRA の紹介"
 date: "2023-09-28T22:00:00+09:00"
 tags: ["AI", "NLP"]
 header_image: "/blog_header/longlora.png"
 ---
 
-# 【論文】Llama2 が 100k トークン入力可能に!? 高コスパ手法 LongLoRA
+# 【論文】Llama2 が 100k トークン入力可能に!? 高コスパ手法 LongLoRA の紹介
 
 ## はじめに
 
