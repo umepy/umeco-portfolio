@@ -16,6 +16,7 @@ LongLoRA は 9/21 に arXiv に投稿された論文で、この手法によっ�
 ## 概要
 
 arxiv page: [URL](https://arxiv.org/abs/2309.12307)
+
 新規性は主に以下の 3 点です。 これらの提案によって**低コストで学習済み LLM を長い入力トークンを扱えるように fine-tuning**することが可能になります。
 
 - 超シンプルかつ汎用性の高い **Shift Short Attention** の提案
@@ -43,7 +44,7 @@ LongLoRA では入力トークン長が伸びても Full fine-tuning と同等�
 ## Shift Short Attention
 
 Transformer の大きなボトルネックは Self-attention の計算で、入力トークン長の 2 乗である`O(n^2)`の計算量とメモリが必要になるのは有名な話です。
-そのため、LongLoRA でも入力トークン長を伸ばすためには Self-attention の計算量を削減する必要があります。
+そのため、LongLoRA でも入力トークン長を伸ばすために Self-attention の計算量を削減する手法を提案しています。
 
 LongLoRA では Shift Short Attention という手法を提案しており、以下のようなイメージです。
 
