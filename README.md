@@ -20,3 +20,4 @@ npm run dev
 ## Future tasks
 
 - [ ] implement i18n to markdown blogs
+- [ ] write the blog about how to implement LLM from scratch
