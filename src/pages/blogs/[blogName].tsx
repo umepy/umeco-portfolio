@@ -76,20 +76,20 @@ export default function BlogPage({ blog }: Props) {
             url={"https://umeco.tokyo/blogs/" + blog.blogName}
             title={blog.title}
             related={["mumeco_ml"]}
-            className="mx-1"
+            className="mx-1 hover:transform hover:scale-110"
           >
             <TwitterIcon size={40} round />
           </TwitterShareButton>
           <HatenaShareButton
             url={"https://umeco.tokyo/blogs/" + blog.blogName}
             title={blog.title}
-            className="mx-1"
+            className="mx-1 hover:transform hover:scale-110"
           >
             <HatenaIcon size={40} round />
           </HatenaShareButton>
           <a
             href="#"
-            className="mx-1"
+            className="mx-1 hover:transform hover:scale-110"
             onClick={() => {
               const sw = screen.width / 2;
               const sh = screen.height / 2;
