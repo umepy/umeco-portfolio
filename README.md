@@ -21,3 +21,4 @@ npm run dev
 
 - [ ] implement i18n to markdown blogs
 - [ ] write the blog about how to implement LLM from scratch
+- [ ] write about
