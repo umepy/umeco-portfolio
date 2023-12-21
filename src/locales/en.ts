@@ -8,10 +8,12 @@ const en = {
     He is interested not only in the ML area but also in IT in general, and has skills in front-end, back-end and cloud computing.",
   PROGRAMMING_LANGUAGE:
     "Language: Python, Rust, Go, C++, Java, JavaScript, TypeScript",
-  FRAMEWORK: "Framework: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js",
+  FRAMEWORK:
+    "Framework: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js, Terraform",
   RESEARCH: "Specialization: ML, DL, RL, NLP, Data analysis, Dialogue system",
   PRIZES:
-    "2022 - GCP Professional Data Engineer\n\
+    "2023 - Ledge.ai CHALLENGE Generative AI Hackason Outstanding Award\n\
+    2022 - GCP Professional Data Engineer\n\
     2020 - JSAI Outstanding Paper Award \n\
     2020 - Komoda Advanced Science Academic Award \n\
     2020 - The Highest Grade Point Award \n\

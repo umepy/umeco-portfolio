@@ -9,11 +9,12 @@ const ja = {
   PROGRAMMING_LANGUAGE:
     "プログラミング言語: Python, Rust, Go, C++, Java, JavaScript, TypeScript",
   FRAMEWORK:
-    "フレームワーク: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js",
+    "フレームワーク: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js, Terraform",
   RESEARCH:
     "専門分野: 機械学習, 深層学習, 強化学習, 自然言語処理, データ分析, 対話システム",
   PRIZES:
-    "2022 - GCP Professional Data Engineer\n\
+    "2023 - Ledge.ai CHALLENGE 生成AIハッカソン 優秀賞\n\
+    2022 - GCP Professional Data Engineer\n\
     2020 - 人工知能学会研究会優秀賞\n\
     2020 - 薦田先端学術賞\n\
     2020 - 学業成績最優秀賞\n\
