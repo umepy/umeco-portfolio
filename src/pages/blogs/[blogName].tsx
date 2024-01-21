@@ -165,13 +165,13 @@ export default function BlogPage({ blog }: Props) {
       />
       <div className="bg-gray-100">
         <div className="flex flex-row space-x-0 md:space-x-6 items-start justify-center py-10 md:px-4">
-          <div className="shadow-lg rounded-md bg-white p-6 min-w-0 ">
+          <div className="shadow-lg rounded-md bg-white p-6 min-w-0 max-w-6xl">
             <Link href="/blog">
               <span className="hover:bg-gray-200 rounded-lg px-2">
                 🏠ブログ一覧
               </span>
             </Link>
-            <article className="prose prose-sm sm:prose prose-h2:after:prose-hr prose-code:before:hidden prose-code:after:hidden shrink pt-2">
+            <article className="prose max-w-none prose-h2:after:prose-hr prose-code:before:hidden prose-code:after:hidden shrink pt-2">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
                 rehypePlugins={[rehypeKatex]}
