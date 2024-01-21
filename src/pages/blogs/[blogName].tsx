@@ -52,7 +52,7 @@ export const getStaticProps = async ({ params }: any) => {
 export default function BlogPage({ blog }: Props) {
   //@ts-ignore
   // table of contents
-  const H2Link = ({ node, ...props }) => {
+  const H2Link = ({ node, ...props }: any) => {
     return (
       <div className="w-full flex flex-col">
         <h2
@@ -123,7 +123,7 @@ export default function BlogPage({ blog }: Props) {
 
   //@ts-ignore
   // do smooth scroll when clicking the table of contents
-  const ankerLink = ({ node, ...props }) => {
+  const ankerLink = ({ node, ...props }: any) => {
     return (
       <>
         <ScrollLink
