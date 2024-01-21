@@ -10,6 +10,7 @@ module.exports = {
       gray: colors.gray,
       black: colors.black,
       white: colors.white,
+      red: colors.red,
       text_gray: "#0F1111",
     },
     fontFamily: {
