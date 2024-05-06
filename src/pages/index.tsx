@@ -83,6 +83,8 @@ export default function Home() {
             <div>
               <p className="text-3xl text-text_gray font-bold p-2">Biography</p>
               <p className="text-xl text-text_gray p-2 pb-10">{t.BIOGRAPHY}</p>
+              <p className="text-3xl text-text_gray font-bold p-2">NEWS</p>
+              <p className="text-xl text-text_gray p-2 pb-10">{t.CONTACT}</p>
             </div>
           </div>
         </div>
@@ -304,6 +306,82 @@ export default function Home() {
                     <span className="hover:text-blue-400 py-1">
                       【研究室論文紹介】Using an Artificial Financial Market for
                       studying a Cryptocurrency Market
+                    </span>
+                  </a>
+                </li>
+              </ul>
+
+              <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
+                執筆した記事
+              </p>
+              <ul className="list-disc px-10 pb-20">
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/how-to-ai-project-guide/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      AIプロジェクトは事前計画が大事！失敗しない進め方を解説
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/gigcomet-prodcutdev-background-interview/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【インタビュー】AI開発プロジェクトを支援するサービスGigCometの開発背景に迫る！
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/make_ai_chat_app_from_scratch_deploy_cloud/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【初心者向け】１時間で自分だけのAIチャットアプリを作ろう！〜クラウドデプロイ編〜
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/make_ai_chat_app_from_scratch_with_localllm/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【初心者向け】１時間で自分だけのAIチャットアプリを作ろう！〜ローカルLLM編〜
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/make_ai_chat_app_from_scratch/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【初心者向け】１時間で自分だけのAIチャットアプリを作ろう！〜基礎編〜
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/paper-introduction-musiq/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      任意の解像度/アスペクト比の画像をそのまま入力できるTransformer「MUSIQ」解説！
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tc3.co.jp/how-to-build-ai-environment-on-gcp/"
+                    target="_blank"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【2023】爆速でGCPにリモートAI開発環境を構築する方法🔥
                     </span>
                   </a>
                 </li>
