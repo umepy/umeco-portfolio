@@ -6,6 +6,10 @@ const en = {
     After graduating, he joined an AI venture, where he was in charge of research and development of large-scale language models, dialogue systems, etc., with a focus on NLP.\
     In his current position, he focuses on providing AI solutions using his own knowledge, and is also involved in setting up other AI teams and product development.\
     He is interested not only in the ML area but also in IT in general, and has skills in front-end, back-end and cloud computing.",
+  CONTACT:
+    "Recently, I have been supporting the launch of generative AI projects and consulting.\
+  Please contact me from the Contact in the upper right corner.\
+  (If there is no response, it's possible that it might have been overlooked, so please contact me via X or LinkedIn.)",
   PROGRAMMING_LANGUAGE:
     "Language: Python, Rust, Go, C++, Java, JavaScript, TypeScript",
   FRAMEWORK:
