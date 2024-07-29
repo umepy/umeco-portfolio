@@ -73,7 +73,8 @@ CPU温度をチェックすると平常時50~60度、ベンチマーク中は80�
 [ブルースクリーンのメモリダンプから原因を解析する方法](https://shop.applied-net.co.jp/blog/cate_kojin_news_tech/21926/)を参考にしました。
 
 ダンプファイルの分析結果は以下のような結果
-```
+
+```text
 MODULE_NAME: AuthenticAMD
 IMAGE_NAME:  AuthenticAMD.sys
 STACK_COMMAND:  .cxr; .ecxr ; kb
@@ -91,7 +92,7 @@ Followup:     MachineOwner
 [FF14ブルースクリーン問題　やっと解決しました](https://jp.finalfantasyxiv.com/lodestone/character/1344652/blog/5102117/)
 
 ↑は5800Xを使っていてブルースクリーンに悩まされている方の解決方法でした。この方と共通だったのはマザーボードがASRockだったこと。
-ここに書いてあるようにRyzenの**Core Performance Boost(CPB)**が悪さをしていました。CPBは自動OC機能みたいで、そりゃ温度上がるよねという。
+ここに書いてあるようにRyzenの **Core Performance Boost(CPB)** が悪さをしていました。CPBは自動OC機能みたいで、そりゃ温度上がるよねという。
 
 >温度が上がることはRYZENのCPB仕様だから問題ないんだけど、冷却機構の簡易水冷FANまたはポンプのPID制御がかみ合っておらず、強制再起動おきるCPU温度まで上がってるんじゃないかなと。それがBSODとして表面に出てきてるんじゃないかと仮説
 

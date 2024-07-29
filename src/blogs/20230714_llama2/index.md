@@ -216,7 +216,6 @@ TC3 は「Gig Innovated.」のスローガンを掲げ、ギグ・エコノミ�
 - TC3 の応募ポジション一覧は[こちら](https://www.tc3.co.jp/hiring-open-positions/)
 - TC3 の社員インタビューは[こちら](https://www.tc3.co.jp/?s=gigabyte)
 
-[^1]: A Survey of Large Language Models: [URL](https://arxiv.org/abs/2303.18223)
 [^2]: Training language models to follow instructions with human feedback: [URL](https://arxiv.org/abs/2203.02155)
 [^3]: LLaMA: Open and Efficient Foundation Language Models: [URL](https://arxiv.org/abs/2302.13971)
 [^4]: 厳密には 1epoch だけ学習するわけではないので単純にデータセットサイズでの比較はできません。
