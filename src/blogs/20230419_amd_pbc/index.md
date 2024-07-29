@@ -92,7 +92,7 @@ Followup:     MachineOwner
 [FF14ブルースクリーン問題　やっと解決しました](https://jp.finalfantasyxiv.com/lodestone/character/1344652/blog/5102117/)
 
 ↑は5800Xを使っていてブルースクリーンに悩まされている方の解決方法でした。この方と共通だったのはマザーボードがASRockだったこと。
-ここに書いてあるようにRyzenの**Core Performance Boost(CPB)**が悪さをしていました。CPBは自動OC機能みたいで、そりゃ温度上がるよねという。
+ここに書いてあるようにRyzenの **Core Performance Boost(CPB)** が悪さをしていました。CPBは自動OC機能みたいで、そりゃ温度上がるよねという。
 
 >温度が上がることはRYZENのCPB仕様だから問題ないんだけど、冷却機構の簡易水冷FANまたはポンプのPID制御がかみ合っておらず、強制再起動おきるCPU温度まで上がってるんじゃないかなと。それがBSODとして表面に出てきてるんじゃないかと仮説
 
