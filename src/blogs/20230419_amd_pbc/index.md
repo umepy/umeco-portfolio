@@ -73,7 +73,8 @@ CPU温度をチェックすると平常時50~60度、ベンチマーク中は80�
 [ブルースクリーンのメモリダンプから原因を解析する方法](https://shop.applied-net.co.jp/blog/cate_kojin_news_tech/21926/)を参考にしました。
 
 ダンプファイルの分析結果は以下のような結果
-```
+
+```text
 MODULE_NAME: AuthenticAMD
 IMAGE_NAME:  AuthenticAMD.sys
 STACK_COMMAND:  .cxr; .ecxr ; kb
