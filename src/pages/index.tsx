@@ -99,6 +99,7 @@ export default function Home() {
               <p className="text-xl text-text_gray p-2">
                 {t.PROGRAMMING_LANGUAGE}
               </p>
+              <p className="text-xl text-text_gray p-2">{t.CLOUD}</p>
               <p className="text-xl text-text_gray p-2">{t.FRAMEWORK}</p>
               <p className="text-xl text-text_gray p-2 pb-10">{t.RESEARCH}</p>
             </div>

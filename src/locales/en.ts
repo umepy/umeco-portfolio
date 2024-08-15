@@ -11,10 +11,11 @@ const en = {
   Please contact me from the Contact in the upper right corner.\
   (If there is no response, it's possible that it might have been overlooked, so please contact me via X or LinkedIn.)",
   PROGRAMMING_LANGUAGE:
-    "Language: Python, Rust, Go, C++, Java, JavaScript, TypeScript",
-  FRAMEWORK:
-    "Framework: PyTorch, JAX(Flax), OpenCV, Docker, React, Next.js, Terraform",
-  RESEARCH: "Specialization: ML, DL, RL, NLP, Data analysis, Dialogue system",
+    "Language: Python, Dart, TypeScript, Rust, Go, C++, Java, JavaScript",
+  FRAMEWORK: "Framework: PyTorch, Docker, Flutter, React, Next.js, Terraform",
+  CLOUD: "クラウド: Google Cloud(LOVE), Firebase, AWS, Azure",
+  RESEARCH:
+    "Specialization: ML, DL, RL, NLP, Generative AI, Data analysis, Dialogue system",
   PRIZES:
     "2023 - Ledge.ai CHALLENGE Generative AI Hackason Outstanding Award\n\
     2022 - GCP Professional Data Engineer\n\
