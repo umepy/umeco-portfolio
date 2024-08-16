@@ -4,6 +4,7 @@ import remarkGfm from "remark-gfm";
 import { getAllBlogsData, getBlogData } from "@/utils/blog_render";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
 import { Link as ScrollLink } from "react-scroll";
 import { NextSeo, ArticleJsonLd } from "next-seo";
 import Link from "next/link";
@@ -174,7 +175,7 @@ export default function BlogPage({ blog }: Props) {
             <article className="prose max-w-none prose-h2:after:prose-hr prose-code:before:hidden prose-code:after:hidden shrink pt-2">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
-                rehypePlugins={[rehypeKatex]}
+                rehypePlugins={[rehypeKatex, rehypeRaw]}
                 components={{
                   h2: H2Link,
                   code: CodeBlock,
@@ -193,6 +194,7 @@ export default function BlogPage({ blog }: Props) {
             <ReactMarkdown
               allowedElements={["h2"]}
               components={{ h2: ankerLink }}
+              rehypePlugins={[rehypeRaw]}
             >
               {blog.content}
             </ReactMarkdown>
