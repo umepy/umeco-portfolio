@@ -186,7 +186,7 @@ export default function BlogPage({ blog }: Props) {
               </ReactMarkdown>
             </article>
           </div>
-          <div className="sticky top-4 shadow-lg rounded-md bg-white p-6 shrink-0 hidden lg:block lg:visible w-56">
+          <div className="sticky top-4 shadow-lg rounded-md bg-white p-6 shrink-0 hidden lg:block lg:visible w-56 lg:w-auto lg:min-w-40">
             <div className="flex justify-center">
               <p className="text-lg">目次</p>
             </div>
