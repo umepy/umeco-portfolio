@@ -21,7 +21,7 @@ npm run dev
 
 1. `npx -p npm-check-updates  -c "ncu"`
 2. `npx -p npm-check-updates  -c "ncu -u"`
-3. `npm install`
+3. `npm install --legacy-peer-deps`
 
 ## Future tasks
 
