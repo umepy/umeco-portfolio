@@ -69,6 +69,7 @@ header_image: "/blog_header/beach_girl.png"
 <div style="display: flex; justify-content:space-around;">
   <img src="/blogs/20240905_tabiai/tabiai_example1.png" alt="Image 1" style="width: 200px; margin-right: 10px;">
   <img src="/blogs/20240905_tabiai/tabiai_example2.png" alt="Image 2" style="width: 200px; margin-right: 10px;">
+  <img src="/blogs/20240905_tabiai/tabiai_example3.png" alt="Image 2" style="width: 200px; margin-right: 10px;">
 </div>
 
 すると、軽井沢にある滝に行くことが提案され、滞在時間や交通手段に関する情報も含まれたプランが作成されました！
