@@ -133,7 +133,10 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/" locale={t.locale == "en" ? "ja" : "en"}>
+                <Link
+                  href={router.asPath}
+                  locale={t.locale == "en" ? "ja" : "en"}
+                >
                   <p className="hover:scale-105 ">Language</p>
                 </Link>
               </li>
