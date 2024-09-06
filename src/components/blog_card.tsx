@@ -8,9 +8,16 @@ interface Props {
   date: string;
   blogName: string;
   header_image: string;
+  locale: string;
 }
 
-const BlogCard: FC<Props> = ({ title, date, blogName, header_image }) => {
+const BlogCard: FC<Props> = ({
+  title,
+  date,
+  blogName,
+  header_image,
+  locale,
+}) => {
   assert(
     !isNaN(new Date(date).getTime()),
     "Error occur when parsing the date of blogs, please check the blog metadata."
@@ -19,6 +26,14 @@ const BlogCard: FC<Props> = ({ title, date, blogName, header_image }) => {
   const year = dateObj.getUTCFullYear();
   const month = dateObj.getUTCMonth() + 1;
   const day = dateObj.getUTCDate();
+  const formattedDate =
+    locale === "ja"
+      ? `${year}年 ${month}月 ${day}日`
+      : new Intl.DateTimeFormat("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }).format(dateObj);
   const blogLink = "/blogs/" + blogName;
   assert(header_image !== undefined, "header_image is undefined");
   const headerImage =
@@ -36,9 +51,7 @@ const BlogCard: FC<Props> = ({ title, date, blogName, header_image }) => {
               height={600}
             />
             <p className="text-lg font-bold pt-2 px-2">{title}</p>
-            <p className="text-sm text-gray-500 p-2 mt-auto">
-              {year}年 {month}月 {day}日
-            </p>
+            <p className="text-sm text-gray-500 p-2 mt-auto">{formattedDate}</p>
           </div>
         </div>
       </Link>

@@ -20,6 +20,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
 
 export default function BlogPage({ blogs }: Props) {
   const { t } = useLocale();
+  const { locale } = useLocale();
   return (
     <>
       <NextSeo title={t.BLOG_SEO_TITLE} description={t.BLOG_SEO_DESCRIPTION} />
@@ -36,6 +37,7 @@ export default function BlogPage({ blogs }: Props) {
                 blogName={blog.blogName}
                 key={blog.blogName}
                 header_image={blog.header_image}
+                locale={locale!}
               />
             );
           })}
