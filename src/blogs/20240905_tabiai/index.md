@@ -1,5 +1,5 @@
 ---
-title: "AIは人が楽しめるレベルの旅行プランは作れるのか？"
+title: "現段階のAIは人が楽しめるレベルの旅行プランは作れるのか？"
 date: "2024-09-05T22:00:00+09:00"
 tags: ["アプリ"]
 header_image: "/blog_header/beach_girl.png"

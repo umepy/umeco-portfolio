@@ -31,6 +31,12 @@ const en = {
     2020/03, Graduated shcool of Aoyama gakuin university, Master of engineering \n\
     2018/08, Internship, Cookpad \n\
     2018/03, Aoyama gakuin University, Bachelor of engineering ",
+
+  BLOG_HEADER: "Blog Posts",
+  BLOG_SEO_TITLE: "Blog Posts | umeco's portfolio",
+  BLOG_SEO_DESCRIPTION: "umeco's blog posts",
+  BLOG_POSTS: "🏠Blog Posts",
+  BLOG_TABLEOFCONTENTS: "Contents",
 };
 
 export default en;

@@ -1,3 +1,5 @@
+import BlogCard from "@/components/blog_card";
+
 const ja = {
   MY_NAME: "梅本 晴弥",
   BIOGRAPHY:
@@ -32,5 +34,11 @@ const ja = {
     2020/03, 青山学院大学大学院卒業 修士（工学）\n\
     2018/08, インターンシップ, Cookpad株式会社 \n\
     2018/03, 青山学院大学卒業 学士（工学）",
+
+  BLOG_HEADER: "ブログ記事一覧",
+  BLOG_SEO_TITLE: "ブログ記事一覧 | umeco's portfolio",
+  BLOG_SEO_DESCRIPTION: "umecoのブログ記事一覧ページ",
+  BLOG_POSTS: "🏠ブログ一覧",
+  BLOG_TABLEOFCONTENTS: "目次",
 };
 export default ja;

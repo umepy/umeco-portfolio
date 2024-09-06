@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { getAllBlogsData, getBlogData } from "@/utils/blog_render";
+import { blogData, getAllBlogsData, getBlogData } from "@/utils/blog_render";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
@@ -15,34 +15,57 @@ import {
   HatenaIcon,
   HatenaShareButton,
   LinkedinIcon,
-  LinkedinShareButton,
 } from "react-share";
+import { useRouter } from "next/router";
+import { useLocale } from "@/locales/local";
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticPaths = async () => {
-  const blogs = getAllBlogsData(["blogName"]);
-  const paths = blogs.map((blog) => {
+  const blogs_ja = getAllBlogsData(["blogName"], "ja");
+  const blogs_en = getAllBlogsData(["blogName"], "en");
+  const paths_ja = blogs_ja.map((blog) => {
     return {
       params: {
         blogName: blog.blogName,
       },
+      locale: "ja",
     };
   });
+  const paths_en = blogs_en.map((blog) => {
+    return {
+      params: {
+        blogName: blog.blogName,
+      },
+      locale: "en",
+    };
+  });
+  const paths = paths_ja.concat(paths_en);
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 };
 
-export const getStaticProps = async ({ params }: any) => {
-  const blog = getBlogData(params.blogName, [
-    "title",
-    "date",
-    "blogName",
-    "content",
-    "header_image",
-  ]);
+export const getStaticProps = async (context: any) => {
+  let blog = getBlogData(
+    context.params.blogName,
+    ["title", "date", "blogName", "content", "header_image"],
+    context.locale || "ja"
+  );
+  if (blog === null) {
+    blog = getBlogData(
+      context.params.blogName,
+      ["title", "date", "blogName", "content", "header_image"],
+      "ja"
+    );
+  }
+  if (blog === null) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       blog,
@@ -51,6 +74,9 @@ export const getStaticProps = async ({ params }: any) => {
 };
 
 export default function BlogPage({ blog }: Props) {
+  const { t } = useLocale();
+  const router = useRouter();
+
   //@ts-ignore
   // table of contents
   const H2Link = ({ node, ...props }: any) => {
@@ -69,12 +95,16 @@ export default function BlogPage({ blog }: Props) {
 
   //@ts-ignore
   const TitleWithShareButton = ({ ...props }) => {
+    const url =
+      router.locale !== "ja"
+        ? `https://umeco.tokyo/${router.locale}${router.asPath}`
+        : `https://umeco.tokyo${router.asPath}`;
     return (
       <>
         <h1 className="text-2xl font-bold">{props.children}</h1>
         <div className="flex flex-row justify-start">
           <TwitterShareButton
-            url={"https://umeco.tokyo/blogs/" + blog.blogName}
+            url={url}
             title={blog.title}
             related={["mumeco_ml"]}
             className="mx-1 hover:transform hover:scale-110"
@@ -82,7 +112,7 @@ export default function BlogPage({ blog }: Props) {
             <TwitterIcon size={40} round />
           </TwitterShareButton>
           <HatenaShareButton
-            url={"https://umeco.tokyo/blogs/" + blog.blogName}
+            url={url}
             title={blog.title}
             className="mx-1 hover:transform hover:scale-110"
           >
@@ -95,8 +125,7 @@ export default function BlogPage({ blog }: Props) {
               const sw = screen.width / 2;
               const sh = screen.height / 2;
               window.open(
-                "https://www.linkedin.com/shareArticle/?url=https://umeco.tokyo/blogs/" +
-                  blog.blogName +
+                `https://www.linkedin.com/shareArticle/?url=${url}` +
                   "&title=" +
                   blog.title +
                   "&summary=" +
@@ -169,7 +198,7 @@ export default function BlogPage({ blog }: Props) {
           <div className="shadow-lg rounded-md bg-white p-6 min-w-0 max-w-6xl">
             <Link href="/blog">
               <span className="hover:bg-gray-200 rounded-lg px-2">
-                🏠ブログ一覧
+                {t.BLOG_POSTS}
               </span>
             </Link>
             <article className="prose max-w-none prose-h2:after:prose-hr prose-code:before:hidden prose-code:after:hidden shrink pt-2">
@@ -188,7 +217,7 @@ export default function BlogPage({ blog }: Props) {
           </div>
           <div className="sticky top-4 shadow-lg rounded-md bg-white p-6 shrink-0 hidden lg:block lg:visible w-56 xl:w-auto xl:min-w-40">
             <div className="flex justify-center">
-              <p className="text-lg">目次</p>
+              <p className="text-lg">{t.BLOG_TABLEOFCONTENTS}</p>
             </div>
             <div className="border-solid border-gray-200 border mb-4" />
             <ReactMarkdown

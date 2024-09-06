@@ -133,7 +133,10 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="/" locale={t.locale == "en" ? "ja" : "en"}>
+                <Link
+                  href={router.asPath}
+                  locale={t.locale == "en" ? "ja" : "en"}
+                >
                   <p className="hover:scale-105 ">Language</p>
                 </Link>
               </li>
@@ -147,7 +150,6 @@ export default function Navbar() {
 }
 
 const Link_menu = () => {
-  console.log("yes");
   return (
     <>
       <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
