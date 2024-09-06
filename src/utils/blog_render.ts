@@ -3,10 +3,12 @@ import { join } from "path";
 import matter from "gray-matter";
 
 const blogDirectory = join(process.cwd(), "src/blogs");
+const blogDirectory_en = join(process.cwd(), "src/blogs_en");
 
 // Get all blog files
-export const getBlogFiles = (): string[] => {
-  const blog_dirs = fs.readdirSync(blogDirectory, { withFileTypes: true });
+export const getBlogFiles = (locale: string): string[] => {
+  const blogDirectoryPath = locale === "ja" ? blogDirectory : blogDirectory_en;
+  const blog_dirs = fs.readdirSync(blogDirectoryPath, { withFileTypes: true });
   return blog_dirs
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name);
@@ -22,8 +24,19 @@ export interface blogData {
 }
 
 // read blog file(.md) and return the data
-export const getBlogData = (blogName: string, fields: string[] = []) => {
-  const fullPath = join(blogDirectory, blogName, "index.md");
+export const getBlogData = (
+  blogName: string,
+  fields: string[] = [],
+  locale: string
+) => {
+  const blogDirectoryPath = locale === "ja" ? blogDirectory : blogDirectory_en;
+  const fullPath = join(blogDirectoryPath, blogName, "index.md");
+
+  //check if the file exists
+  if (!fs.existsSync(fullPath)) {
+    return null;
+  }
+
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
@@ -55,11 +68,12 @@ export const getBlogData = (blogName: string, fields: string[] = []) => {
 };
 
 // Get all specified blog data
-export const getAllBlogsData = (fields: string[]) => {
-  const blogNames = getBlogFiles();
+export const getAllBlogsData = (fields: string[], locale: string) => {
+  const blogNames = getBlogFiles(locale);
   // sort by blogName in descending order
   const allBlogsData = blogNames
-    .map((blogName) => getBlogData(blogName, fields))
+    .map((blogName) => getBlogData(blogName, fields, locale))
+    .filter((blog) => blog !== null)
     .sort((a, b) =>
       a.blogName.toLowerCase() > b.blogName.toLowerCase() ? -1 : 1
     );
