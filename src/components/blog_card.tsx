@@ -25,7 +25,7 @@ const BlogCard: FC<Props> = ({ title, date, blogName, header_image }) => {
     header_image === "" ? "/blog_header/pc_meadow.png" : header_image;
   return (
     <>
-      <Link href={blogLink} locale="ja">
+      <Link href={blogLink}>
         <div className="shadow-md bg-white rounded-md min-w-[80%] sm:min-w-[5%] m-4 w-72 h-72 shrink-0 hover:transform hover:scale-105 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
           <div className="flex flex-col h-full">
             <Image
