@@ -2,7 +2,7 @@
 title: "JPKIのアプリでスマホをICカードリーダとして使う方法"
 date: "2025-01-18T20:00:00+09:00"
 tags: ["備忘録"]
-header_image: "/blog_header/beach_girl.png"
+header_image: "/blog_header/angry_cat.png"
 ---
 
 # JPKIのアプリでスマホをICカードリーダとして使う方法
