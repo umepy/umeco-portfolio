@@ -28,6 +28,8 @@ export default function Home() {
                 href="https://www.linkedin.com/in/umeco/"
                 target="_blank"
                 className="p-1"
+                rel="noopener noreferrer"
+                title="LinkedIn"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +43,8 @@ export default function Home() {
                 href="https://github.com/umepy"
                 target="_blank"
                 className="p-1"
+                rel="noopener noreferrer"
+                title="GitHub"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,6 +58,8 @@ export default function Home() {
                 href="https://booklog.jp/users/umecoco"
                 target="_blank"
                 className="p-1"
+                rel="noopener noreferrer"
+                title="Booklog"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +75,8 @@ export default function Home() {
                 href="https://speakerdeck.com/umeco"
                 target="_blank"
                 className="p-1"
+                rel="noopener noreferrer"
+                title="Speaker Deck"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -134,6 +142,7 @@ export default function Home() {
                         href="https://www.jstage.jst.go.jp/article/jsaikbs/118/0/118_03/_article/-char/ja/"
                         target="_blank"
                         className="pt-4"
+                        rel="noopener noreferrer"
                       >
                         <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
                           READ MORE
@@ -156,6 +165,7 @@ export default function Home() {
                         href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=194770&item_no=1&page_id=13&block_id=8"
                         target="_blank"
                         className="pt-4"
+                        rel="noopener noreferrer"
                       >
                         <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
                           READ MORE
@@ -180,6 +190,7 @@ export default function Home() {
                         href="https://link.springer.com/chapter/10.1007/978-3-319-97289-3_11"
                         target="_blank"
                         className="pt-4"
+                        rel="noopener noreferrer"
                       >
                         <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
                           READ MORE
@@ -202,6 +213,7 @@ export default function Home() {
                         href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=185896&item_no=1&page_id=13&block_id=8"
                         target="_blank"
                         className="pt-4"
+                        rel="noopener noreferrer"
                       >
                         <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
                           READ MORE
@@ -224,6 +236,7 @@ export default function Home() {
                         href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=177687&item_no=1&page_id=13&block_id=8"
                         target="_blank"
                         className="pt-4"
+                        rel="noopener noreferrer"
                       >
                         <button className="border-2 hover:border-blue-400 hover:text-blue-400 px-4 py-2 rounded">
                           READ MORE
@@ -242,6 +255,7 @@ export default function Home() {
                   <a
                     href="https://www.slideshare.net/ArithmerInc/transformer-248613529"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【勉強会資料】全力解説！Transformer
@@ -252,6 +266,7 @@ export default function Home() {
                   <a
                     href="https://speakerdeck.com/umeco/cookpad-r-and-d-internship-2018-byumeco"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【Cookpad Intern】レシピの分散表現を用いたアレンジ度の算出
@@ -262,6 +277,7 @@ export default function Home() {
                   <a
                     href="https://speakerdeck.com/umeco/wssit2019-shi-cai-ming-falsefen-san-biao-xian-xue-xi-woyong-italiao-li-resipifalserong-yang-tui-ding-shou-fa"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【WSSIT2019】食材名の分散表現学習を用いた料理レシピの栄養推定手法
@@ -272,6 +288,7 @@ export default function Home() {
                   <a
                     href="https://speakerdeck.com/umeco/wssit2018-liao-li-resipifalsefen-san-biao-xian-woyong-itadai-ti-shi-cai-falsefa-jian-shou-fa"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【WSSIT2018】料理レシピの分散表現を用いた代替食材の発見手法
@@ -282,6 +299,7 @@ export default function Home() {
                   <a
                     href="https://speakerdeck.com/umeco/jpywei-ti-retoyu-ce"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【WSSIT2017】過去の変動に対する類似検索を用いた短時間USD/JPY為替レート予測
@@ -292,6 +310,7 @@ export default function Home() {
                   <a
                     href="https://speakerdeck.com/umeco/distributed-prioritized-experience-replay"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【研究室論文紹介】Distributed prioritized experience
@@ -303,6 +322,7 @@ export default function Home() {
                   <a
                     href="https://speakerdeck.com/umeco/using-an-artificial-financial-market-for-studying-a-cryptocurrency-market"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【研究室論文紹介】Using an Artificial Financial Market for
@@ -318,8 +338,20 @@ export default function Home() {
               <ul className="list-disc px-10 pb-20">
                 <li>
                   <a
+                    href="https://qiita.com/Umeco_co/items/8a434b0e72202d4532ca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="hover:text-blue-400 py-1">
+                      【16万View✨】生成AIで会社の要件定義プロセスを100倍高速化した話
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://www.tc3.co.jp/how-to-ai-project-guide/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       AIプロジェクトは事前計画が大事！失敗しない進め方を解説
@@ -330,6 +362,7 @@ export default function Home() {
                   <a
                     href="https://www.tc3.co.jp/gigcomet-prodcutdev-background-interview/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【インタビュー】AI開発プロジェクトを支援するサービスGigCometの開発背景に迫る！
@@ -340,6 +373,7 @@ export default function Home() {
                   <a
                     href="https://www.tc3.co.jp/make_ai_chat_app_from_scratch_deploy_cloud/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【初心者向け】１時間で自分だけのAIチャットアプリを作ろう！〜クラウドデプロイ編〜
@@ -350,6 +384,7 @@ export default function Home() {
                   <a
                     href="https://www.tc3.co.jp/make_ai_chat_app_from_scratch_with_localllm/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【初心者向け】１時間で自分だけのAIチャットアプリを作ろう！〜ローカルLLM編〜
@@ -360,6 +395,7 @@ export default function Home() {
                   <a
                     href="https://www.tc3.co.jp/make_ai_chat_app_from_scratch/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【初心者向け】１時間で自分だけのAIチャットアプリを作ろう！〜基礎編〜
@@ -370,6 +406,7 @@ export default function Home() {
                   <a
                     href="https://www.tc3.co.jp/paper-introduction-musiq/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       任意の解像度/アスペクト比の画像をそのまま入力できるTransformer「MUSIQ」解説！
@@ -380,6 +417,7 @@ export default function Home() {
                   <a
                     href="https://www.tc3.co.jp/how-to-build-ai-environment-on-gcp/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <span className="hover:text-blue-400 py-1">
                       【2023】爆速でGCPにリモートAI開発環境を構築する方法🔥
