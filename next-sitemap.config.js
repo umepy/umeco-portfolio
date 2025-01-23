@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://umeco.tokyo",
+  siteUrl: "https://umeco.jp",
   generateRobotsTxt: true,
   sitemapSize: 7000,
 };

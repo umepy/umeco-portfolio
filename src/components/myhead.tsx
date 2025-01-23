@@ -29,11 +29,11 @@ export function DefaultHead() {
           title: "umeco's portfolio",
           description:
             "AIやIT関連の話題を発信をしているポートフォリオサイトです。",
-          url: "https://umeco.tokyo",
+          url: "https://umeco.jp",
           site_name: "umeco's portfolio",
           images: [
             {
-              url: "https://umeco.tokyo/cat_icon_128.png",
+              url: "https://umeco.jp/cat_icon_128.png",
               width: 128,
               height: 128,
               alt: "umeco's portfolio image alt",
