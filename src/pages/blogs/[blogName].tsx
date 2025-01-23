@@ -97,8 +97,8 @@ export default function BlogPage({ blog }: Props) {
   const TitleWithShareButton = ({ ...props }) => {
     const url =
       router.locale !== "ja"
-        ? `https://umeco.tokyo/${router.locale}${router.asPath}`
-        : `https://umeco.tokyo${router.asPath}`;
+        ? `https://umeco.jp/${router.locale}${router.asPath}`
+        : `https://umeco.jp${router.asPath}`;
     return (
       <>
         <h1 className="text-2xl font-bold">{props.children}</h1>
@@ -130,7 +130,7 @@ export default function BlogPage({ blog }: Props) {
                   blog.title +
                   "&summary=" +
                   blog_description +
-                  "&source=umeco.tokyo",
+                  "&source=umeco.jp",
                 "",
                 "width=500,height=500,scrollbars=yes,left=" + sw + ",top=" + sh
               );
@@ -177,7 +177,7 @@ export default function BlogPage({ blog }: Props) {
           title: blog.title,
           description: blog_description,
           url: blog.blogName,
-          images: [{ url: `https://umeco.tokyo${blog.header_image}` }],
+          images: [{ url: `https://umeco.jp${blog.header_image}` }],
         }}
         twitter={{
           site: "@mumeco_ml",
@@ -189,7 +189,7 @@ export default function BlogPage({ blog }: Props) {
         url={blog.blogName}
         title={blog.title}
         description={blog_description}
-        images={[`https://umeco.tokyo${blog.header_image}`]}
+        images={[`https://umeco.jp${blog.header_image}`]}
         datePublished={new Date(blog.date).toISOString()}
         authorName="umeco"
       />

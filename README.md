@@ -2,7 +2,7 @@
 
 This is the source code of my web portfolio page.
 
-## 👉 check [umeco's portfolio!](https://umeco.tokyo)
+## 👉 check [umeco's portfolio!](https://umeco.jp)
 
 ## environment
 
