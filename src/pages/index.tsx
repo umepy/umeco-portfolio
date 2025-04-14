@@ -17,7 +17,7 @@ export default function Home() {
               className="rounded-full w-40 h-40 mt-24"
               width={200}
               height={200}
-              src="/my_face.jpeg"
+              src="/my_face.jpg"
               alt="face_img"
             ></Image>
             <p className="text-4xl pt-4">{t.MY_NAME}</p>
