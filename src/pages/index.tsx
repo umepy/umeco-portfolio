@@ -14,9 +14,9 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center md:w-1/2">
             <Image
-              className="rounded-full w-40 h-40 mt-24"
-              width={200}
-              height={200}
+              className="rounded-full w-40 h-40 md:w-50 md:h-50 mt-24"
+              width={250}
+              height={250}
               src="/my_face.jpg"
               alt="face_img"
             ></Image>
