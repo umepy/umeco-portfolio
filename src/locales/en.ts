@@ -1,11 +1,11 @@
 const en = {
   MY_NAME: "HARUYA UMEMOTO",
   BIOGRAPHY:
-    "Haruya Umemoto studied computer science at university/graduate school and conducted research using machine learning and deep learning. \
-    His research interests include reinforcement learning and natural language processing (NLP), and he has recently developed an understanding of research in the field of imaging. \
-    After graduating, he joined an AI venture, where he was in charge of research and development of large-scale language models, dialogue systems, etc., with a focus on NLP.\
-    In his current position, he focuses on providing AI solutions using his own knowledge, and is also involved in setting up other AI teams and product development.\
-    He is interested not only in the ML area but also in IT in general, and has skills in front-end, back-end and cloud computing.",
+    "Haruya Umemoto studied computer science at university and graduate school, where he conducted research using machine learning and deep learning, with a focus on reinforcement learning and natural language processing (NLP). \
+    After completing his graduate studies, he joined an AI venture, where he led research and development centered on the NLP field, including large-scale language models and dialogue systems. \
+    He then served as the head of AI business at an IT startup, developing AI solutions for major manufacturing companies and launching new AI-driven businesses. \
+    He is currently the founder and CEO of Tripia Inc., driving business in the AI-powered travel and tourism DX field. \
+    He specializes in supporting research and development that leverages cutting-edge AI technology, and has broad expertise across IT in general, including front-end, back-end, and cloud, driving new service development from both technical and business perspectives.",
   CONTACT:
     "Recently, I have been supporting the launch of generative AI projects and consulting.\
   Please contact me from the Contact in the upper right corner.\
