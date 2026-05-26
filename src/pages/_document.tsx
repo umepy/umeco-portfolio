@@ -1,8 +1,9 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript, DocumentProps } from "next/document";
 
-export default function Document() {
+export default function Document(props: DocumentProps) {
+  const locale = props.__NEXT_DATA__.locale ?? "ja";
   return (
-    <Html lang="en">
+    <Html lang={locale}>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

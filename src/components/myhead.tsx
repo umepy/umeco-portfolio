@@ -1,17 +1,5 @@
 import Head from "next/head";
-import { NextSeo, DefaultSeo } from "next-seo";
-
-export interface HeadProps {
-  title: string;
-  description: string;
-  og_titles?: string;
-  og_description?: string;
-  og_type?: string;
-  og_url?: string;
-  og_image?: string;
-  og_locale?: string;
-  og_site_name?: string;
-}
+import { DefaultSeo } from "next-seo";
 
 export function DefaultHead() {
   return (

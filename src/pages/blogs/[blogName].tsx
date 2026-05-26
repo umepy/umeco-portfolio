@@ -101,7 +101,7 @@ export default function BlogPage({ blog }: Props) {
         : `https://umeco.jp${router.asPath}`;
     return (
       <>
-        <h1 className="text-2xl font-bold">{props.children}</h1>
+        <h1 className="text-3xl font-bold">{props.children}</h1>
         <div className="flex flex-row justify-start">
           <TwitterShareButton
             url={url}
@@ -151,6 +151,11 @@ export default function BlogPage({ blog }: Props) {
     .replace(/[\n ]{2,}/g, "\n")
     .slice(0, 160);
 
+  const blog_url =
+    router.locale && router.locale !== "ja"
+      ? `https://umeco.jp/${router.locale}/blogs/${blog.blogName}`
+      : `https://umeco.jp/blogs/${blog.blogName}`;
+
   //@ts-ignore
   // do smooth scroll when clicking the table of contents
   const ankerLink = ({ node, ...props }: any) => {
@@ -159,7 +164,7 @@ export default function BlogPage({ blog }: Props) {
         <ScrollLink
           to={node.position?.start.line.toString()}
           smooth={true}
-          className="hover:text-blue-500 hover:cursor-pointer"
+          className="hover:text-sky-500 hover:cursor-pointer"
         >
           {props.children}
         </ScrollLink>
@@ -172,11 +177,11 @@ export default function BlogPage({ blog }: Props) {
     <>
       <NextSeo
         title={blog.title}
-        description={blog.title}
+        description={blog_description}
         openGraph={{
           title: blog.title,
           description: blog_description,
-          url: blog.blogName,
+          url: blog_url,
           images: [{ url: `https://umeco.jp${blog.header_image}` }],
         }}
         twitter={{
@@ -186,7 +191,7 @@ export default function BlogPage({ blog }: Props) {
       />
       <ArticleJsonLd
         type="BlogPosting"
-        url={blog.blogName}
+        url={blog_url}
         title={blog.title}
         description={blog_description}
         images={[`https://umeco.jp${blog.header_image}`]}

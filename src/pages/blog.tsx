@@ -26,7 +26,7 @@ export default function BlogPage({ blogs }: Props) {
       <NextSeo title={t.BLOG_SEO_TITLE} description={t.BLOG_SEO_DESCRIPTION} />
       <div className="flex flex-wrap justify-center bg-gray-100">
         <div className="flex justify-center basis-full">
-          <p className="text-2xl py-4">{t.BLOG_HEADER}</p>
+          <p className="text-3xl font-bold py-4">{t.BLOG_HEADER}</p>
         </div>
         <div className="flex flex-wrap items-start justify-center lg:w-8/12">
           {blogs.map((blog) => {

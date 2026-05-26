@@ -13,9 +13,6 @@ module.exports = {
       red: colors.red,
       text_gray: "#0F1111",
     },
-    fontFamily: {
-      body: ["ヒラギノ角ゴシック", "メイリオ", "Meiryo"],
-    },
     extend: {
       typography: {
         DEFAULT: {
