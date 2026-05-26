@@ -13,7 +13,7 @@ const en = {
   PROGRAMMING_LANGUAGE:
     "Language: Python, Dart, TypeScript, Rust, Go, C++, Java, JavaScript",
   FRAMEWORK: "Framework: PyTorch, Docker, Flutter, React, Next.js, Terraform",
-  CLOUD: "クラウド: Google Cloud(LOVE), Firebase, AWS, Azure",
+  CLOUD: "Cloud: Google Cloud, Firebase, AWS, Azure",
   RESEARCH:
     "Specialization: ML, DL, RL, NLP, Generative AI, Data analysis, Dialogue system",
   PRIZES:
@@ -26,7 +26,8 @@ const en = {
     2017 - Data analysis&Simulation Hackason 2017 Second prise (SIG-DOCMAS) \n\
     2015 - Award of Aoyama gakuin University (Hack U 2015 at Aoyama gakuin University)",
   CAREER:
-    "2021/10, ML Engineer, TC3 \n\
+    "2025/04, Tripia inc., CEO \n\
+    2021/10, ML Engineer, TC3 \n\
     2020/04, ML Engineer, Arithmer \n\
     2020/03, Graduated shcool of Aoyama gakuin university, Master of engineering \n\
     2018/08, Internship, Cookpad \n\

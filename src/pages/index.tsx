@@ -14,14 +14,14 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center md:w-1/2">
             <Image
-              className="rounded-full w-40 h-40 md:w-50 md:h-50 mt-24"
+              className="rounded-full w-40 h-40 md:w-52 md:h-52 mt-24"
               width={250}
               height={250}
               src="/my_face.jpg"
               alt="face_img"
             ></Image>
             <p className="text-4xl pt-4">{t.MY_NAME}</p>
-            <p className="text-xl text-gray-400 pt-1 pb-4">ML Engineer</p>
+            <p className="text-xl text-gray-400 pt-1 pb-4">AI Researcher</p>
 
             <div className="flex flex-row justify-center pb-4">
               <a
@@ -91,19 +91,19 @@ export default function Home() {
             <div>
               <p className="text-3xl text-text_gray font-bold p-2">Biography</p>
               <p className="text-xl text-text_gray p-2 pb-10">{t.BIOGRAPHY}</p>
-              <p className="text-3xl text-text_gray font-bold p-2">NEWS</p>
+              <p className="text-3xl text-text_gray font-bold p-2">Contact</p>
               <p className="text-xl text-text_gray p-2 pb-10">{t.CONTACT}</p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-centerp-2">
+        <div className="flex flex-col items-center justify-center p-2">
           <div className="flex flex-col justify-center md:w-1/2">
             <div>
               <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
                 Skills
               </p>
             </div>
-            <div className="flex flex-col items-cente">
+            <div className="flex flex-col items-start">
               <p className="text-xl text-text_gray p-2">
                 {t.PROGRAMMING_LANGUAGE}
               </p>
@@ -125,7 +125,7 @@ export default function Home() {
             </p>
             <div>
               <p className="text-3xl font-bold text-text_gray pt-4 pb-2">
-                Pubilications
+                Publications
               </p>
               <div className="flex flex-wrap">
                 <div className="sm:basis-full md:basis-1/3">

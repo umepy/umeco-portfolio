@@ -16,7 +16,7 @@ const ja = {
     "プログラミング言語: Python, Dart, Rust, Go, C++, Java, JavaScript, TypeScript",
   FRAMEWORK:
     "フレームワーク: PyTorch, Docker, Flutter, React, Next.js, Terraform",
-  CLOUD: "クラウド: Google Cloud(大好き), Firebase, AWS, Azure",
+  CLOUD: "クラウド: Google Cloud, Firebase, AWS, Azure",
   RESEARCH:
     "専門分野: 機械学習, 深層学習, 強化学習, 自然言語処理, 生成AI, データ分析, 対話システム",
   PRIZES:
@@ -29,7 +29,8 @@ const ja = {
     2017 - データ解析&シミュレーションハッカソン2017準優勝(SIG-DOCMAS)\n\
     2015 - 青山学院大学賞(Hack U 2015 at 青山学院大学)",
   CAREER:
-    "2021/10, MLエンジニア, TC3 株式会社\n\
+    "2025/04, Tripia株式会社, 代表取締役\n\
+    2021/10, MLエンジニア, TC3 株式会社\n\
     2020/04, MLエンジニア, Arithmer 株式会社\n\
     2020/03, 青山学院大学大学院卒業 修士（工学）\n\
     2018/08, インターンシップ, Cookpad株式会社 \n\

@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { useRouter } from "next/router";
 import { useLocale } from "@/locales/local";
 
 export default function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
   const router = useRouter();
   const t = useLocale();
   return (
@@ -26,9 +25,6 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <button className="" onClick={() => setNavbarOpen(!navbarOpen)}>
-            <span className="sr-only">Open main menu</span>
-          </button>
           <Menu>
             <Menu.Button>
               <div className="inline-flex items-center p-2 ml-3 text-sm text-gray-200 border border-gray-200 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200">
@@ -101,7 +97,11 @@ export default function Navbar() {
                     <div className="p-1 m-1 hover:bg-sky-100 rounded-md hover:transform hover:scale-105">
                       <button
                         type="button"
-                        onClick={() => router.push("/")}
+                        onClick={() =>
+                          router.push(router.asPath, undefined, {
+                            locale: t.locale === "en" ? "ja" : "en",
+                          })
+                        }
                         className="block w-full text-left"
                       >
                         <div className="flex flex-row">
@@ -144,26 +144,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <>{navbarOpen ? <Link_menu /> : <></>}</>
     </>
   );
 }
-
-const Link_menu = () => {
-  return (
-    <>
-      <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-        <li className="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-          Profile
-        </li>
-        <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-          Settings
-        </li>
-        <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-          Messages
-        </li>
-        <li className="w-full px-4 py-2 rounded-b-lg">Download</li>
-      </ul>
-    </>
-  );
-};
